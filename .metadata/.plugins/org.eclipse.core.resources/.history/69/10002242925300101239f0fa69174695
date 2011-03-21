@@ -1,0 +1,37 @@
+package com.christan.tests;
+
+import org.junit.Test;
+
+public abstract class GenericTestHelpers {
+	// These should probably end up in a properties file... I'll do it later if I have time
+	String navFileName = "navigationTest";
+	String footerFileName = "footerTest";
+	String fileExtension = ".txt";
+	
+	GenericTestHelpers() {
+		nav
+	}
+	
+	@Test
+	public void verifyNavigation(){
+		// check to see if the navigation file already exists
+		if (doesFileExist())
+		// if not, create a new one and store the results from this test run then throw a failure
+		// if so, check to see if the nav on this page matches
+		
+	}
+	
+	@Test
+	public void verifyFooter() {
+		
+	}
+	
+	protected boolean doesFileExist(String fileName) {
+		return false;
+	}
+	
+	protected boolean createFile(String fileName) {
+		return false;
+	}
+
+}

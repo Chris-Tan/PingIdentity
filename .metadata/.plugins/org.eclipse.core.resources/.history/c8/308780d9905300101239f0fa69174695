@@ -1,0 +1,28 @@
+package com.christan.tests;
+
+import org.junit.Test;
+
+public abstract class GenericTestHelpers {
+	
+	@Test
+	public void verifyNavigation(){
+		// check to see if the navigation file already exists
+		// if not, create a new one and store the results from this test run then throw a failure
+		// if so, check to see if the nav on this page matches
+		
+	}
+	
+	@Test
+	public void verifyFooter() {
+		
+	}
+	
+	protected boolean checkIfFileExists(String fileName) {
+		return false;
+	}
+	
+	protected boolean createFile(String fileName) {
+		return false;
+	}
+
+}

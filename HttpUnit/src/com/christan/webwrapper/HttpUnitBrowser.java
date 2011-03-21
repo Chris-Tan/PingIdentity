@@ -1,53 +1,66 @@
 package com.christan.webwrapper;
 
-import java.io.IOException;
-import org.xml.sax.SAXException;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import com.meterware.httpunit.*;
 
 public class HttpUnitBrowser {
 	WebConversation browser;
 	WebResponse response;
 
-    
-    public HttpUnitBrowser() {
-    	init();
-    }
-    
-     
-    public void init() {
-    	HttpUnitOptions.setScriptingEnabled(true);
+	public HttpUnitBrowser() {
+		init();
+	}
+
+	public void init() {
+		HttpUnitOptions.setScriptingEnabled(true);
 		HttpUnitOptions.setExceptionsThrownOnScriptError(false);
-		
-    	browser = new WebConversation();
-    }
-    
-    public boolean open(String url) {
-    	boolean result = true;
-    	try {
-			response = browser.getResponse( url );
+
+		browser = new WebConversation();
+	}
+
+	public boolean open(String url) {
+		boolean result = true;
+		try {
+			response = browser.getResponse(url);
 		} catch (Exception e) {
 			result = false;
 			System.err.println(e.getStackTrace());
-		} 
+		}
 		return result;
-    }
-    
-    public boolean clickTextLink(String linkText) {
-    	boolean result = true;
-    	WebLink link;
-    	
+	}
+
+	public boolean clickTextLink(String linkText) {
+		boolean result = true;
+		WebLink link;
+
 		try {
-			link = response.getLinkWith( linkText );
+			link = response.getLinkWith(linkText);
 			link.click();
 		} catch (Exception e) {
 			result = false;
 			System.err.println(e.getStackTrace());
-		} 
-		
+		}
+
 		return result;
-    }
-    
-    public String getCurrentPageUrl() {
-    	return browser.getCurrentPage().getURL().toString();  
-    }
+	}
+
+	public String getCurrentPageUrl() {
+		return browser.getCurrentPage().getURL().toString();
+	}
+
+	/*
+	 * public String getAllLinksOnPage(String page) { return null; }//
+	 */
+
+	// assumptions: not testing other environments e.g. alpha.pingidentity.com
+	// (otherwise I'd remove the domain name so the same test can work for all
+	// environments)
+	public String convertUrlToFileName(String urlToConvert)
+			throws UnsupportedEncodingException {
+		// credit to
+		// http://stackoverflow.com/questions/1652483/convert-between-url-and-windows-filename-java
+		return URLEncoder.encode(urlToConvert, "UTF-8");
+	}
+
 }

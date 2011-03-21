@@ -1,0 +1,11 @@
+import java.net.URLEncoder;
+
+
+public class GenericTestHelpers {
+	
+	
+	
+	public String convertUrlToFileName(String urlToConvert) {
+		return URLEncoder.encode(urlToConvert, "UTF-8");
+	}
+}

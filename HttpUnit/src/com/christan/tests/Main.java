@@ -21,6 +21,10 @@ public class Main {
 		if(!browser.open("http://www.pingidentity.com/"))
 			System.out.println("browser failed to open");
 		System.out.println(browser.getCurrentPageUrl());
+		try{
+		System.out.println(browser.convertUrlToFileName("http://www.httpunit.org/doc/cookbook.html"));
+		System.out.println(browser.convertUrlToFileName("http://www.pingidentity.com/"));
+		} catch (Exception e) {}
 	}
 
 }
