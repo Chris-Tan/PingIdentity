@@ -1,0 +1,27 @@
+package com.christan.tests;
+
+import java.io.*;
+import java.util.*;
+
+import javax.servlet.http.*;
+import javax.servlet.ServletException;
+
+import tutorial.persistence.*;
+
+public class PoolEditorServlet extends HttpServlet {
+
+    protected void doGet( HttpServletRequest request, HttpServletResponse response )
+            throws ServletException, IOException {
+        response.setContentType( "text/html" );
+        PrintWriter pw = response.getWriter();
+
+        pw.println( "<html><head></head><body>" );
+        printBody( pw );
+        pw.println( "</body></html>" );
+    }
+
+    private void printBody( PrintWriter pw ) {
+        pw.println( "A simple page" );
+    }
+}
+

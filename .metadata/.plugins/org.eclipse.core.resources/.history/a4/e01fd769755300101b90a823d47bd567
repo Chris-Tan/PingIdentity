@@ -1,0 +1,53 @@
+package com.christan.tests;
+
+import com.meterware.httpunit.*;
+import com.meterware.servletunit.*;
+import java.util.*;
+import junit.framework.*;
+//import tutorial.persistence.*;
+import com.christan.*;
+
+public class PoolEditorTest extends TestCase {
+
+    public static void main( String args[] ) {
+        junit.textui.TestRunner.run( suite() );
+    }
+
+    public static TestSuite suite() {
+        return new TestSuite( PoolEditorTest.class );
+    }
+
+    public PoolEditorTest( String s ) {
+        super( s );
+    }
+
+    @SuppressWarnings("deprecation")
+	public void testGetForm() throws Exception {
+        ServletRunner sr = new ServletRunner( "web.xml" );       // (1) use the web.xml file to define mappings
+        ServletUnitClient client = sr.newClient();               // (2) create a client to invoke the application
+
+        try {
+            client.getResponse( "http://localhost/PoolEditor" ); // (3) invoke the servlet w/o authorization
+            fail( "PoolEditor is not protected" );
+        } catch (AuthorizationRequiredException e) {             // (4) verify that access is denied
+        }
+
+        client.setAuthorization( "aUser", "pool-admin" );        // (5) specify authorization and
+        client.getResponse( "http://localhost/PoolEditor" );     //     invoke the servlet again
+    }
+    
+    public void testFormAction() throws Exception {
+        ServletRunner sr = new ServletRunner( "web.xml" );
+        ServletUnitClient client = sr.newClient();
+        client.setAuthorization( "aUser", "pool-admin" );
+        WebResponse response = client.getResponse( "http://localhost/PoolEditor" );
+
+        WebForm form = response.getFormWithID( "pool" );               // (1) obtain the desired form
+        assertNotNull( "No form found with ID 'pool'", form );
+        assertEquals( "Form method", "POST", form.getMethod() );       // (2) verify that the form uses POST
+        assertEquals( "Form action", "", form.getAction() );           // (3) verify that the default action is used
+    }
+
+
+
+}

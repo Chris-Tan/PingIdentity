@@ -1,0 +1,79 @@
+package com.christan.webwrapper;
+
+import java.io.IOException;
+
+import org.xml.sax.SAXException;
+
+/*
+import com.meterware.httpunit.GetMethodWebRequest;
+import com.meterware.httpunit.WebConversation;
+import com.meterware.httpunit.WebLink;
+import com.meterware.httpunit.WebResponse;
+import com.meterware.httpunit.WebRequest;
+//*/
+import com.meterware.httpunit.*;
+
+public class HttpUnitWrapper {
+	String url;
+	WebConversation wc;
+	WebRequest request;
+	WebResponse response;
+	
+	
+	HttpUnitWrapper(){
+		// create the conversation object which will maintain state for us
+        wc = new WebConversation();
+		url = null;        
+        request = null;
+        response = null;
+        
+
+	}
+	/**
+	 * 
+	 * If this method fails, you should not proceed with other test cases as the page never opened.
+	 * @param newurl
+	 * @return
+	 * @throws SAXException
+	 * @throws IOException
+	 */
+	public WebResponse open(String newurl) throws SAXException, IOException {
+		// url of the page to visit
+		url = newurl;
+		
+		request = new GetMethodWebRequest( url );
+        response = wc.getResponse( request );
+        
+        return response;
+	}
+	
+	
+	
+	public boolean clickLinkWithText(String linkText) {
+        try {
+            // find the link which contains the string "HttpUnit" and click it
+            WebLink httpunitLink = response.getFirstMatchingLink( WebLink.MATCH_CONTAINED_TEXT, linkText );
+        	response = httpunitLink.click();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SAXException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        return true;
+	}
+	
+	public WebForm getHttpUnitInstance() {
+	    try {
+	        
+	        // print out the number of links on the HttpUnit main page
+	        System.out.println( "The HttpUnit main page '"+url+"' contains " + response.getLinks().length + " links" );
+
+	      } catch (Exception e) {
+	         System.err.println( "Exception: " + e );
+	      }
+
+		return form;
+	}
+}

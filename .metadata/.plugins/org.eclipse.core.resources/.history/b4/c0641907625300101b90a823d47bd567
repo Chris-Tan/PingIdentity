@@ -1,0 +1,33 @@
+package PingIdentity;
+
+import com.meterware.httpunit.*;
+import com.meterware.servletunit.*;
+import java.util.*;
+import junit.framework.*;
+//import tutorial.persistence.*;
+
+
+public class HttpUnit {
+	   /**
+     * Verifies that submitting the login form with the name "master" results
+     * in a page containing the text "Top Secret"
+     **/
+    public void testGoodLogin() throws Exception {
+        WebConversation     conversation = new WebConversation();
+        WebRequest  request = new GetMethodWebRequest( 
+	  			"http://www.meterware.com/servlet/TopSecret" );
+
+        WebResponse response = conversation.getResponse( request );
+        WebForm loginForm = response.getForms()[0];
+        request = loginForm.getRequest();
+        request.setParameter( "name", "master" );
+        response = conversation.getResponse( request );
+        assertTrue( "Login not accepted", 
+	           response.getText().indexOf( "You made it!" ) != -1 );
+
+        assertEquals( "Page title", "Top Secret", response.getTitle() );
+    } 
+
+	
+	
+}

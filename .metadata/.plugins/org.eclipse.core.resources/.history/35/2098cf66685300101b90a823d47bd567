@@ -1,0 +1,68 @@
+package com.christan.webwrapper;
+
+import java.io.IOException;
+
+import org.xml.sax.SAXException;
+
+/*
+import com.meterware.httpunit.GetMethodWebRequest;
+import com.meterware.httpunit.WebConversation;
+import com.meterware.httpunit.WebLink;
+import com.meterware.httpunit.WebResponse;
+import com.meterware.httpunit.WebRequest;
+//*/
+import com.meterware.httpunit.*;
+
+public class HttpUnitWrapper {
+	String url;
+	WebConversation wc;
+	WebRequest request;
+	WebResponse response;
+	
+	
+	HttpUnitWrapper(){
+		// create the conversation object which will maintain state for us
+        wc = new WebConversation();
+		url = null;        
+        request = null;
+        response = null;
+        
+
+	}
+	/**
+	 * 
+	 * If this method fails, you should not proceed with other test cases as the page failed to open.
+	 * @param newurl
+	 * @return
+	 * @throws SAXException
+	 * @throws IOException
+	 */
+	public WebResponse open(String newurl) throws SAXException, IOException {
+		// url of the page to visit
+		url = newurl;
+		
+		request = new GetMethodWebRequest( url );
+        response = wc.getResponse( request );
+        
+        return response;
+	}
+	
+	
+	/**
+	 * Returns true if the link was clicked successfully.
+	 * @param linkText
+	 * @return
+	 */
+	public boolean clickLinkWithText(String linkText) {
+        try {
+            // find the link which contains the string "HttpUnit" and click it
+            WebLink httpunitLink = response.getFirstMatchingLink( WebLink.MATCH_CONTAINED_TEXT, linkText );
+        	response = httpunitLink.click();
+		} catch (Exception e) {
+			//if an error occurs, let the calling method know
+			return false;
+		}
+        return true;
+	}
+
+}

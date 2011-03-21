@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.meterware.httpunit.WebForm"/>
+<fullyQualifiedTypeName name="com.meterware.httpunit.WebConversation"/>
+<fullyQualifiedTypeName name="com.meterware.httpunit.WebRequest"/>
+<fullyQualifiedTypeName name="com.meterware.httpunit.WebResponse"/>
+<fullyQualifiedTypeName name="com.meterware.httpunit.GetMethodWebRequest"/>
+<fullyQualifiedTypeName name="com.meterware.httpunit.WebLink"/>
+<fullyQualifiedTypeName name="com.christan.webwrapper.HttpUnitWrapper"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="com.christan.webwrapper.ServletRunnerWrapper"/>
+<fullyQualifiedTypeName name="com.christan.webwrapper.HttpUnitBrowser"/>
+</qualifiedTypeNameHistroy>

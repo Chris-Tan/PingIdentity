@@ -1,0 +1,17 @@
+package com.christan.tests;
+import com.christan.webwrapper.HttpUnitWrapper;
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		HttpUnitWrapper httpUnit = new HttpUnitWrapper();
+		httpUnit.open("www.pingidentity.com");
+		httpUnit.clickLinkWithText("Learn more");
+		httpUnit.pNumberOfLinksOnPage();
+
+	}
+
+}

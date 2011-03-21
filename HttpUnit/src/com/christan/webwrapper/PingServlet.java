@@ -1,0 +1,38 @@
+package com.christan.webwrapper;
+
+import java.io.*;
+import javax.servlet.http.*;
+import javax.servlet.ServletException;
+
+
+public class PingServlet extends HttpServlet {
+
+    protected void doGet( HttpServletRequest request, HttpServletResponse response )
+            throws ServletException, IOException {
+        response.setContentType( "text/html" );
+        PrintWriter pw = response.getWriter();
+
+        pw.println( "<html><head></head><body>" );
+        printBody( pw );
+        pw.println( "</body></html>" );
+    }
+
+    private void printBody( PrintWriter pw ) {
+        pw.println( "<form id='pool' method='POST'>" );
+        pw.println( "<table>" );
+        pw.println( "<tr><th>Home Team</th><th>Away Team</th><th>Tiebreaker?</th></tr>" );
+        for (int i = 0; i < 10; i++) {
+            pw.println( "<tr><td><input name='home" + i + "'></td>" );
+            pw.println( "<td><input name='away" + i + "'></td>" );
+            pw.println( "<td><input type='radio' name='tiebreaker' value='" + i + "'/></td></tr>" );
+        }
+        pw.println( "</table>" );
+        pw.println( "<input type='submit' name='save' value='Save' />" );
+        pw.println( "<input type='submit' name='save' value='Open Pool' />" );
+        pw.println( "</form>" );
+    }
+
+
+
+}
+

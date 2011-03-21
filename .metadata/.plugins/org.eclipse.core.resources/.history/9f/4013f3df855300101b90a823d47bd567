@@ -1,0 +1,40 @@
+package com.christan.webwrapper;
+
+import java.io.IOException;
+import org.xml.sax.SAXException;
+import com.meterware.httpunit.*;
+
+public class ServletRunnerWrapper {
+	WebConversation wc;
+	WebResponse response;
+
+    
+    public ServletRunnerWrapper() {
+    	init();
+    }
+    
+     
+    public void init() {
+    	HttpUnitOptions.setScriptingEnabled(true);
+		HttpUnitOptions.setExceptionsThrownOnScriptError(false);
+		
+    	wc = new WebConversation();
+    }
+    
+    public void open(String url) throws IOException, SAXException {
+    	response = wc.getResponse( url ); 
+    }
+    
+    public boolean clickTextLink(String linkText) {
+    	boolean result = true;
+    	WebLink link;
+		try {
+			link = response.getLinkWith( "response" );
+			link.click();
+		} catch (Exception e) {
+			result = false;
+		} 
+		
+		return result;
+    }
+}

@@ -1,0 +1,20 @@
+package com.christan.webwrapper;
+
+import com.meterware.httpunit.WebForm;
+
+public class HttpUnitWrapper {
+	HttpUnitWrapper() {
+		
+	}
+	
+	public WebForm getHttpUnitInstance() {
+		ServletRunner sr = new ServletRunner( "web.xml" );
+	    ServletUnitClient client = sr.newClient();
+	    client.setAuthorization( "aUser", "pool-admin" );
+	    WebResponse response = client.getResponse( "http://localhost/PoolEditor" );
+
+	    WebForm form = response.getFormWithID( "pool" );
+
+		return form;
+	}
+}

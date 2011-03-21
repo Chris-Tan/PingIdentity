@@ -1,0 +1,27 @@
+package com.christan.tests;
+import java.io.IOException;
+
+import org.xml.sax.SAXException;
+
+import com.christan.webwrapper.HttpUnitWrapper;
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		HttpUnitWrapper httpUnit = new HttpUnitWrapper();
+		try {
+			httpUnit.open("www.pingidentity.com");
+			httpUnit.clickLinkWithText("Learn more");
+			httpUnit.pNumberOfLinksOnPage();
+		} catch (Exception e) {
+			//failed to open the webpage!
+			e.printStackTrace();
+		}
+		
+
+	}
+
+}

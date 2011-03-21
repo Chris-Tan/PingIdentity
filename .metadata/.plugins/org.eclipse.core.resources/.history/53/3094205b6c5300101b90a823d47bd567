@@ -1,0 +1,36 @@
+package com.christan.tests;
+import java.io.IOException;
+
+import org.xml.sax.SAXException;
+
+import com.christan.webwrapper.HttpUnitWrapper;
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		HttpUnitWrapper httpUnit = new HttpUnitWrapper();
+
+			try {
+				httpUnit.open("http://www.durianpreserve.com/index.php");
+			} catch (SAXException e) {
+				System.err.println("SAXException");
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IOException e) {
+				System.err.println("IOException");
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			//httpUnit.clickLinkWithText("Learn more");
+			//httpUnit.pNumberOfLinksOnPage();
+
+		if (httpUnit.response==null) {
+			System.out.println("null");
+		}
+
+	}
+
+}
