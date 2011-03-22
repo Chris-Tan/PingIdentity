@@ -107,7 +107,6 @@ public class HttpUnitBrowser {
 		int[] slashOccurrences;
 		
 		url = getCurrentPageUrl();
-		
 		slashOccurrences = findOccurrenceIndexes(url, slash);
 		
 		// if there are at least three slash occurrences i.e. http://a.com/aboutus.html
@@ -131,5 +130,37 @@ public class HttpUnitBrowser {
 	public String getCurrentPageTitle() throws SAXException {
 		return getCurrentPage().getTitle();
 	}
-
+	
+	public HTMLElement getElementWithID(String id) {
+		try {
+			return response.getElementWithID(id);
+		} catch (SAXException e) {
+			// TODO Auto-generated catch block
+			return null;
+		}
+	}
+	public HTMLElement[] getElementsWithAttribute(String name, String value) {
+		try {
+			return response.getElementsWithAttribute(name, value);
+		} catch (SAXException e) {
+			// TODO Auto-generated catch block
+			return null;
+		}
+	}
+	public HTMLElement[] getElementsWithName(String name) {
+		try {
+			return response.getElementsWithName(name);
+		} catch (SAXException e) {
+			// TODO Auto-generated catch block
+			return null;
+		}
+	}
+	public String[] getElementNames(){
+			try {
+				return response.getElementNames();
+			} catch (SAXException e) {
+				// TODO Auto-generated catch block
+				return null;
+			}
+	}
 }
