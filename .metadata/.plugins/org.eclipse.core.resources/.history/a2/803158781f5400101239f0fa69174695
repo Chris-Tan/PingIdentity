@@ -1,0 +1,29 @@
+package com.christan.pagetests;
+
+import org.junit.*;
+
+import com.christan.webwrapper.HttpUnitBrowser;
+
+public abstract class GenericPageTest {
+
+	String url = null;
+	//GenericPageTest();
+	
+	@BeforeClass
+	public abstract void setUp();
+
+	@Before
+	public void openPage() throws Exception {
+		HttpUnitBrowser browser = new HttpUnitBrowser();
+		if(!browser.open("http://www.httpunit.org/doc/cookbook.html"))
+			throw new Exception("Browser failed to open the page specified")
+		System.out.println(browser.getCurrentPageUrl());
+	}
+	
+	@Test
+	public void testTitle() {
+		System.out.println(url);
+	}
+	
+
+}

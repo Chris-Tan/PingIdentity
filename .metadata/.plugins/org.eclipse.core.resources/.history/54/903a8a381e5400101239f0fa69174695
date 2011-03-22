@@ -1,0 +1,25 @@
+package com.christan.pagetests;
+
+import static org.junit.Assert.*;
+
+import java.io.File;
+
+import org.junit.Test;
+
+public abstract class GenericTestHelpers {
+	// These should probably end up in a properties file... I'll do it later if
+	// I have time
+	String navFileName = "navigationTest";
+	String footerFileName = "footerTest";
+	String fileExtension = ".txt";
+	String directory = "../../lib";
+
+
+	@Test
+	public void verifyFooter() {
+
+	}
+
+
+
+}

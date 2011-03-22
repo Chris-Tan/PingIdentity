@@ -1,0 +1,80 @@
+package com.christan.webwrapper;
+
+import java.io.IOException;
+
+import org.xml.sax.SAXException;
+
+import com.meterware.httpunit.*;
+
+public class HttpUnitBrowser {
+	int longestServerProtocol = "https://".length();
+	WebConversation browser;
+	WebResponse response;
+
+	public HttpUnitBrowser() {
+		init();
+	}
+
+	public void init() {
+		// very important to keep these 2 lines or 3rd party errors will start occurring.
+		HttpUnitOptions.setScriptingEnabled(true);
+		HttpUnitOptions.setExceptionsThrownOnScriptError(false);
+
+		browser = new WebConversation();
+	}
+
+	public void open(String url) throws IOException, SAXException {
+		response = browser.getResponse(url);
+	}
+	
+	public WebResponse getCurrentPage() {
+		return browser.getCurrentPage();
+	}
+
+	public boolean clickTextLink(String linkText) {
+		boolean result = true;
+		WebLink link;
+
+		try {
+			link = response.getLinkWith(linkText);
+			link.click();
+		} catch (Exception e) {
+			result = false;
+			System.err.println(e.getStackTrace());
+		}
+
+		return result;
+	}
+
+	public String getCurrentPageUrl() {
+		return getCurrentPage().getURL().toString();
+	}
+	
+	public String getCurrentDomain() {
+		String domain, url;
+		// i.e. http://www.pingidentity.com/ would be 6
+		int secondSlashOccurrence;
+		// i.e. http://www.pingidentity.com/ would be 27
+		int thirdSlashOccurrence;
+		
+		url = getCurrentPageUrl();
+		
+		if (url.length() <= longestServerProtocol) {
+			// the domain couldn't be parsed because it was less than 8 characters
+			return null;
+		}
+		
+		thirdSlashOccurrence = url.indexOf('/', longestServerProtocol);
+		System.out.println(thirdSlashOccurrence);
+		domain = url.
+		return domain;
+	}
+	
+	
+
+
+	public String getCurrentPageTitle() throws SAXException {
+		return getCurrentPage().getTitle();
+	}
+
+}

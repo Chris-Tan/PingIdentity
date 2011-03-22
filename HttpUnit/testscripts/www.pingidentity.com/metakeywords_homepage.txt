@@ -1,0 +1,1 @@
+federation, PingFederate, saml, Secure Internet Single Sign-On

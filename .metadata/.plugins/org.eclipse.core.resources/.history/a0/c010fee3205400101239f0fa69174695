@@ -1,0 +1,31 @@
+package com.christan.pagetests;
+
+import org.junit.*;
+
+import com.christan.webwrapper.HttpUnitBrowser;
+
+public abstract class GenericPageTest {
+
+	protected String url;
+	protected HttpUnitBrowser browser = new HttpUnitBrowser();
+	//GenericPageTest();
+	
+	protected void initialize(){
+		url = null;
+		browser = new HttpUnitBrowser();
+	}
+
+	public void openPage() throws Exception {
+		
+		if(!browser.open(url))
+			throw new Exception("Browser failed to open the page specified");
+		System.out.println(browser.getCurrentPageUrl());
+	}
+	
+	@Test
+	public void testTitle() {
+		System.out.println(url);
+	}
+	
+
+}

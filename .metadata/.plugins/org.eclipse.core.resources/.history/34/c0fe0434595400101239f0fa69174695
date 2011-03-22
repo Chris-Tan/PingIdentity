@@ -1,0 +1,83 @@
+package com.christan.pagetests;
+
+import static org.junit.Assert.*;
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+
+import org.junit.*;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
+import com.christan.parser.Parser;
+import com.christan.webwrapper.HttpUnitBrowser;
+
+public abstract class GenericPageTest {
+
+	protected String url = null;
+	protected HttpUnitBrowser browser;
+	//GenericPageTest();
+	
+	protected void initialize(){
+		browser = new HttpUnitBrowser();
+	}
+
+	
+	@Test
+	public void testTitle() throws IOException, SAXException {
+		String fileName, fileContents, pageTitle, filePrefix = "title_";
+		Parser p;
+		
+		browser.open(url);
+		p = new Parser(browser.getCurrentDomain());
+		pageTitle = browser.getCurrentPageTitle();
+		fileName = filePrefix + p.convertUrlToFileNameWithExtension(browser.getCurrentPagePath());
+		
+		if (!p.isFileAlreadyExists(fileName)) {
+			p.writeToFile(fileName, pageTitle);
+			fail("The file for storing the title of this page ("+fileName+") did not exist previously, creating it on this run.");
+		}
+		fileContents = p.getFileContents(fileName);
+		Assert.assertTrue("The page title of this page does not match the previous page title", fileContents.equals(pageTitle));
+	}
+	
+	protected String getNodeDetails(Node node) {
+		String result;
+		result = node.getNodeName() + ", " + node.getNodeValue();
+		return result;
+	}
+	
+	protected String getChildrenOfNode(Node node) {
+		String result = "";
+		NodeList nodeList = node.getChildNodes();
+		for (int i = 0; i < nodeList.getLength(); i++) {
+			result += getNodeDetails(nodeList.item(i)) + "\n";
+		}
+		System.out.println("get children: "+result);
+		
+		return result;
+	}
+	
+	@Test
+	public void testNavigation() throws IOException, SAXException {
+		String fileName, fileContents, pageNavigation, filePrefix = "navigation_";
+		Parser p;
+		
+		browser.open(url);
+		p = new Parser(browser.getCurrentDomain());
+		//pageTitle = browser.getCurrentPageTitle();
+		pageNavigation = getChildrenOfNode(browser.getElementWithID("nav-container").getNode());
+		fileName = filePrefix + p.convertUrlToFileNameWithExtension(browser.getCurrentPagePath());
+		
+		if (!p.isFileAlreadyExists(fileName)) {
+			p.writeToFile(fileName, pageNavigation);
+			fail("The file for storing the navigation of this page ("+fileName+") did not exist previously, creating it on this run.");
+		}
+		fileContents = p.getFileContents(fileName);
+		System.out.println("\t\t----------from file:\n"+fileContents);
+		System.out.println("\t\t----------from page:\n"+pageNavigation);
+		//Assert.assertTrue("The page navigation of this page does not match the previous page navigation", fileContents.equals(pageNavigation));
+		Assert.assertTrue(fileContents.equals(pageNavigation));
+	}
+	
+
+}

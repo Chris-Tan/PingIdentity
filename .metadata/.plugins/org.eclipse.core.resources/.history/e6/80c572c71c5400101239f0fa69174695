@@ -1,0 +1,5 @@
+package com.christan.pagetests;
+
+public class AboutUsTest extends GenericPageTest {
+
+}

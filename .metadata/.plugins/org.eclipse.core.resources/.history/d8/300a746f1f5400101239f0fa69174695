@@ -1,0 +1,16 @@
+package com.christan.pagetests;
+
+import org.junit.*;
+
+public abstract class GenericPageTest {
+
+	String url = null;
+	//GenericPageTest();
+	
+	@Test
+	public void testTitle() {
+		System.out.println(url);
+	}
+	
+
+}

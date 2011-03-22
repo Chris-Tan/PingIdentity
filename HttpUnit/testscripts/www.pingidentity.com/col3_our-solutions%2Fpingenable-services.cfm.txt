@@ -1,0 +1,59 @@
+Email
+Print
+Ping Identity > Solutions > PingEnable Services
+PingEnable Services and Support
+Ping Identity developed PIngEnable to meet the specific needs of our customers' identity management environments.  With hundreds of possible ways to implement Internet Identity Security, it is easy to see why many organizations' identity federation projects fail. Without a proven methodology and deployment practices, identity federation projects can take six months or even longer to complete.  PingEnable delivers customizable services, proven support experience and practices designed to meet the exact needs of each of our customers.
+PingEnable methodologies
+Born from lessons learned and practices mastered from hundreds of successful Internet Identity Security deployments, PingEnable's detailed methodologies guide IT organizations and line of business owners through each step of the identity federation process. PingEnable's methodologies are available to all customers and can be used individually or in conjunction with other PingEnable methodologies, and include:
+Evaluation
+Quick Start Implementation
+Managing Connections Partners
+Custom Application Interfacing
+PingEnable Services
+Introduction
+Ping Identity's Client Services team offers an expanded set of services to our customers and their federation partners to help grow federations with more connections and application integrations.  These services feature the expertise of Ping Identity Federation Architects and Certified Trainers to consult with our customers on their federation needs.
+Client Services
+for Customers
+Client Services for
+Federation Partners
+Webinars
+Classroom Instruction
+Bundled Options
+Installation Services
+Ping Identity will assist in the installation and configuration of a PingFederate deployment.  Ping Identity will assist in migrating the PingFederate deployment to a full production environment.
+Custom Integration Kits
+A Ping Identity Federation Architect will perform a technical analysis of your requirements, and then develop, test, deliver, and assist in the installation of the Custom Integration Kit.
+Partner On-Boarding Identity Federation Handbook
+The Partner On-Boarding Identity Federation Handbook provides educational and informational assistance designed to help the reader understand and successfully execute a federated identity initiative. It is designed specifically as a tool to educate a customer’s federation partners on the topics of what they'll need to know to complete a federated Single Sign-on (SSO) connection with the customer.
+Partner Installation Services
+A Ping Identity Federation Architect will assist in the installation and configuration of a PingFederate endpoint or PingFederate Express deployment for your federation partner.  The Federation Architect will verify the Connection between you and your federation partner and migrate this deployment to a production environment.
+Getting Started with PingFederate Webinar Series
+Getting Started with PingFederate is a three part webinar series that will give users a solid foundation in Federation, SAML the PingFederate product and creating a connection. At the conclusion of the webinar series, attendees are offered the use of a virtual lab environment and detailed exercise guide to practice what they learned in the sessions.
+Introduction to Federation
+This course discusses the benefits of a Federated Identity Management system, explains common terminology, provides an overview of SAML, the Security Assertion Markup Language used as a standard protocol for transferring identity information and important considerations in setting up a federated system.
+PingFederate Installation and Configuration
+This course will step users through the process of installing PingFederate, setting up and configuring your servers and adapters and creating a connection using a sample application.
+PingFederate Integration Kits
+This course will give an overview of the integration kits available as well as detail how an integration kit is implemented.
+PingFederate Deployment Options and Troubleshooting
+This course will discuss deployment options and details of configuring a clustered environment. In addition, this course will discuss logs and tools available to identify and fix error conditions that may arise.
+PingFederate Security Token Service (STS)
+This course steps through configuring the WS-Trust STS for IdP and SP deployments.
+PingFederate Administration
+This is a multi-day bundle of the following courses:
+•    Introduction to Federation
+•    PingFederate Installation and Configuration
+•    PingFederate Integration Kits
+•    PingFederate Deployment Options and Troubleshooting
+PingFederate Single Sign-On and Web Services
+This is a multi-day bundle of the following courses:
+•    Introduction to Federation
+•    PingFederate Installation and Configuration
+•    PingFederate Integration Kits
+•    PingFederate Deployment Options and Troubleshooting
+•    PingFederate Security Token Service
+PingEnable's proven implementation plans allow our customers to quickly deploy identity federations:
+Ping Identity customers generally go live on their first Internet SSO connection in 30 days or less
+PingEnable support
+Ping Identity is dedicated to helping our customers successfully deliver secure Internet SSO; we have developed three custom levels of support to best meet our customers' different needs:
+Ping Identity offers three levels of support to meet our customers different needs

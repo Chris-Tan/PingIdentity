@@ -1,0 +1,103 @@
+Email
+Print
+Ping Identity > Solutions > PingConnect On-Demand Single Sign-On (SSO) for Software-as-a-Service (SaaS)
+PingConnect On-Demand SSO for SaaS
+PingConnect eliminates passwords for virtually every major SaaS application including Salesforce, Google Apps, Concur, SuccessFactors, Workday and many more.  PingConnect eliminates redundant administrative work and prevents unauthorized access by automating Internet user account management. No hardware installation is required.
+Overview
+Benefits
+Supported Applications
+Tech Specs
+Get Started
+SSO to SaaS applications
+Users have become accustomed to single sign-on for internal applications, and they demand the same “click and work” convenience from their SaaS apps. PingConnect performs critical functions that make accessing SaaS applications, easier and more secure.
+Internet Single Sign-On
+Once users log in to their corporate network or hosted authentication provider, PingConnect securely communicates their identities to their SaaS providers. No individual SaaS application passwords are necessary and no additional logins are required, increasing user adoption and making applications more secure by eliminating corporate passwords outside the corporate firewall.
+Internet User Account Management
+PingConnect automates the creation and management of user accounts, reducing administrative overhead and strengthening security. When users leave the organization or no longer require access, PingConnect immediately removes their access, ensuring that only authorized users are accessing the application at any given point in time.
+Works with virtually every SaaS application
+Including Salesforce, Google Apps, Concur, SuccessFactors, Workday, Rearden Commerce, WebEx and many others.
+PingConnect is a SaaS Single Sign-On service that works with virtually any SaaS application
+Why choose PingConnect? Because it…
+Works with what you have. PingConnect uses your existing directory and authentication mechanisms so you don't have to maintain redundant directory entries in the cloud or have to roll out a whole new authentication system to your users.
+Is built with proven technology.  PingConnect uses Ping Identity's award-winning PingFederate software that is trusted by hundreds of enterprises, government agencies and service providers worldwide including 40 of the Fortune 100.
+Is delivered on-demand. PingConnect is an on-demand service with a browser-based administrative GUI for setting up your SSO and automated account management connections. PingConnect is sold via a pay-as-you-go subscription model, so there are no perpetual licenses or license fees. Once configured, adding SaaS applications is simple and software upgrades are automatic.
+Delivers advanced SSO functionality. PingConnect supports users logged into your corporate network as well as those working remotely. For Salesforce and Google Apps users can choose between traditional Web browsers, mobile devices and email clients such as Outlook to access their applications. PingConnect also providers customizable Google logout support.
+Streamlines integration. Customers need only install a small Windows Server plug-in and create a SSL connection to their directory to integrate PingConnect into their environment. If these tasks sound difficult, Ping Identity has product experts ready to help you with these steps.
+PingConnect supports Internet Single Sign-On for any SAML (or WS-Fed)-enabled SaaS application. If the SaaS application that you use is not on the list, please contact sales@pingidentity.com.
+|
+|
+|
+| ACI Worldwide
+| Hibbert Company
+| Salesforce Partner Portal
+| ADP Globalview
+| HiveLive
+| Satuit Technologies
+| ADP Pre-Employment Services
+| HumanConcepts
+| Savo Group
+| ADP ProBusiness
+| Innocentive
+| SBC Systems Company
+| Apollo Enterprise Solutions
+| IntraLinks
+| Schawk Digital Solutions
+| Axentis
+| Legal Intelligence
+| Simantel Group
+| Bellomy Research
+| Livetechnology Holdings
+| SuccessFactors
+| Benelogic
+| MarketTools
+| Technology & Business Solutions
+| Brainshark
+| MediaDefined
+| TharpeRobbins Company
+| Business Integration Group
+| Mullin TBG
+| Threepointoffice
+| Concur
+| NextJump
+| Tierra Software Development
+| CreateHope
+| Postini (Google)
+| Triple Creek Associates
+| DecisionView
+| PowerSteering Software
+| TRX
+| ePharma Solutions
+| PriceMetrix
+| Valtera Corporation
+| Financial Knowledge
+| RazorGator
+| VibeSMG
+| Fortrex Technologies
+| Rearden Commerce
+| Vocus
+| Fragomen, Del Rey, Bernsen & Loewry
+| Reed Group
+| WageWorks
+| Geezeo.com
+| Rideau
+| WebEx
+| Globoforce
+| Salary.com
+| Worlddoc
+| Google Apps/Gmai
+| Salesforce CRM
+| Xpress Bill Pay
+| GT Nexus
+| Salesforce Customer Portal
+|
+| Specification
+| Details
+| Directories
+| Microsoft Active Directory, LDAP
+| Authentication Mechanisms
+| Integrated Windows Authentication (IWA), LDAP, Hosted Authentication such as Salesforce and Google Apps
+| Supported Browsers
+| Internet Explorer 6.x, 7.x or Firefox 2.x, 3.x recommended, All modern browsers supported (HTTP/1.1 compliant)
+| Salesforce Access Methods
+| Desktop Web browser, Mobile devices, Microsoft Outlook, Emailed report links
+To learn more about PingConnect, please contact us. A Ping Identity representative will contact you to schedule a convenient time to discuss your requirements.

@@ -1,0 +1,6 @@
+package com.christan.pagetests;
+
+
+public class HomepageTest extends GenericPageTest {
+
+}

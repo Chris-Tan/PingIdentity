@@ -1,0 +1,6 @@
+https://www.pingidentity.com/images/ping-logo-ie.png
+/images/search.png
+/ce-admin/images/video_splash_PFE-IdP_sm_1.png
+/ce-admin/images/video_splash_PFE-SP_sm_1.png
+/images/blank.gif
+/our-solutions/images/PingFederate-Express.png

@@ -1,0 +1,122 @@
+package com.christan.pagetests;
+
+import static org.junit.Assert.*;
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+
+import org.junit.*;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
+import com.christan.parser.Parser;
+import com.christan.webwrapper.HttpUnitBrowser;
+import com.meterware.httpunit.HTMLElement;
+
+public abstract class GenericPageTest {
+
+	protected String url = null;
+	protected HttpUnitBrowser browser;
+	//GenericPageTest();
+	
+	protected void initialize(){
+		browser = new HttpUnitBrowser();
+	}
+
+	
+	@Test
+	public void testTitle() throws IOException, SAXException {
+		String fileName, fileContents, pageTitle, filePrefix = "title_";
+		Parser p;
+		
+		browser.open(url);
+		p = new Parser(browser.getCurrentDomain());
+		pageTitle = browser.getCurrentPageTitle();
+		fileName = filePrefix + p.convertUrlToFileNameWithExtension(browser.getCurrentPagePath());
+		
+		if (!p.isFileAlreadyExists(fileName)) {
+			p.writeToFile(fileName, pageTitle);
+			fail("The file for storing the title of this page ("+fileName+") did not exist previously, creating it on this run.");
+		}
+		fileContents = p.getFileContents(fileName);
+		Assert.assertTrue("The page title of this page does not match the previous page title", fileContents.equals(pageTitle));
+	}
+	
+	protected String getNodeDetails(Node node) {
+		String result;
+		result = node.getNodeName() + ", " + node.getNodeValue();
+		return result;
+	}
+	
+	protected String getElementsWithName(String name) {
+		HTMLElement[] elements = browser.getElementsWithName(name);
+		System.out.println("number of elements "+elements.length);
+		System.out.println("get attribute "+elements[0].getAttribute(name));
+		System.out.println("get text "+elements[0].getText());
+		System.out.println("get title "+elements[0].getTitle());
+		System.out.println("get class name "+elements[0].getClassName());
+		System.out.println("get to string "+elements[0].toString());
+		return "";
+	}
+	
+	protected String getElementsWithAttribute(String name, String value) {
+		HTMLElement[] elements = browser.getElementsWithAttribute(name, value);
+		System.out.println("number of elements "+elements.length);
+		System.out.println("get attribute "+elements[0].getAttribute(name));
+		System.out.println("get text "+elements[0].getText());
+		System.out.println("get title "+elements[0].getTitle());
+		System.out.println("get class name "+elements[0].getClassName());
+		System.out.println("get to string "+elements[0].toString());
+		return "";
+	}
+	
+	public String getTextFromElementId (String elementId) {
+		String result = "", rawText, trimmedLine;
+		String[] rawLines;
+		rawText = browser.getElementWithID(elementId).getText();
+		rawLines = rawText.split("\n"); 
+		for (String line : rawLines) {
+			trimmedLine = line.trim();
+			if (trimmedLine.length() > 0) {
+				result += line.trim() + "\n";
+			}
+		}
+		return result;
+	}
+	
+	@Test
+	public void testNavigation() throws IOException, SAXException {
+		String fileName, fileContents, pageNavigation, filePrefix = "navigation_";
+		Parser p;
+		
+		browser.open(url);
+		p = new Parser(browser.getCurrentDomain());
+		pageNavigation = getTextFromElementId("nav-container");
+		fileName = filePrefix + p.convertUrlToFileNameWithExtension(browser.getCurrentPagePath());
+		
+		if (!p.isFileAlreadyExists(fileName)) {
+			p.writeToFile(fileName, pageNavigation);
+			fail("The file for storing the navigation of this page ("+fileName+") did not exist previously, creating it on this run.");
+		}
+		fileContents = p.getFileContents(fileName);
+		pageNavigation = pageNavigation.substring(0, 40);
+		fileContents = fileContents.substring(0, 40);
+		System.out.println("\t\t----------from file 0: "+fileContents.charAt(0));
+		System.out.println("\t\t----------from page 0: "+pageNavigation.charAt(0));
+		//System.out.println("\t\t----------from file: "+fileContents.charAt(fileContents.length()-2));
+		System.out.println("\t\t----------from file -1: "+fileContents.charAt(fileContents.length()-1));
+		//System.out.println("\t\t----------from page: "+pageNavigation.charAt(pageNavigation.length()-2));
+		System.out.println("\t\t----------from page -1: "+pageNavigation.charAt(pageNavigation.length()-1));
+		Assert.assertTrue("The page navigation of this page does not match the previous page navigation", fileContents.equals(pageNavigation));
+		
+		//Assert.assertTrue(fileContents.equals(pageNavigation));
+		
+		//System.out.println("get elements with name: "+getElementsWithAttribute("","Cloud Apps"));
+		//System.out.println("get elements " + getElementsWithName("customcf1359"));
+		String[] list = browser.getElementNames();
+		for (String a : list) {
+			//System.out.println(a);
+		}
+	}
+	
+
+}

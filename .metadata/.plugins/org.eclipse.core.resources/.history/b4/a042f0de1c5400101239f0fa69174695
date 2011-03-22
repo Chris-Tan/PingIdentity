@@ -1,0 +1,11 @@
+package com.christan.pagetests;
+
+import org.junit.*;
+
+public class AboutUsTest extends GenericPageTest {
+
+	@Before
+	public void setUp() {
+		
+	}
+}

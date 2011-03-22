@@ -1,0 +1,12 @@
+What are the business benefits?
+Our products improve productivity, decrease administrative overhead and reduce help desk costs.
+Learn more
+Will Ping work with my SaaS applications?
+Ping Identity supports Internet Single Sign-On for virtually all leading SaaS applications including Salesforce, Google Apps and Concur.
+Learn more
+Are Ping's products easy to Install?
+Our products work with your existing systems, implement easily and can be up and running in days.
+Learn more
+How does this increase security?
+Our products reduce the risk of password theft and unauthorized access to your on-demand business applications and critical data.
+Learn more

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="com.christan.pagetests" project="HttpUnit" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="com.christan.pagetests.AboutUsTest" time="11.286">
+    <testcase name="testTitle" classname="com.christan.pagetests.AboutUsTest" time="7.739"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.AboutUsTest" time="3.547"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.HomepageTest" time="5.814">
+    <testcase name="testTitle" classname="com.christan.pagetests.HomepageTest" time="3.026"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.HomepageTest" time="2.788"/>
+  </testsuite>
+</testrun>

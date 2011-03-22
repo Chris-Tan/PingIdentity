@@ -1,0 +1,1 @@
+PingFederate, single sign-on, sso

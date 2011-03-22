@@ -1,0 +1,33 @@
+package com.christan.pagetests;
+
+import java.io.IOException;
+
+import org.junit.*;
+import org.xml.sax.SAXException;
+
+import com.christan.webwrapper.HttpUnitBrowser;
+
+public abstract class GenericPageTest {
+
+	protected String url = null;
+	protected HttpUnitBrowser browser;
+	//GenericPageTest();
+	
+	protected void initialize(){
+		browser = new HttpUnitBrowser();
+	}
+
+	public void openPage(String urlToOpen) throws IOException, SAXException {
+		browser.open(urlToOpen);
+		System.out.println(browser.getCurrentPageUrl());
+	}
+	
+	@Test
+	public void testTitle() throws IOException, SAXException {
+		openPage(url);
+		
+		//System.out.println(url);
+	}
+	
+
+}

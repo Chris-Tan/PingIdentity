@@ -1,0 +1,132 @@
+package com.christan.pagetests;
+
+import static org.junit.Assert.*;
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+
+import org.junit.*;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
+import com.christan.parser.Parser;
+import com.christan.webwrapper.HttpUnitBrowser;
+import com.meterware.httpunit.HTMLElement;
+
+public abstract class GenericPageTest {
+
+	protected String url = null;
+	protected HttpUnitBrowser browser;
+	//GenericPageTest();
+	
+	protected void initialize(){
+		browser = new HttpUnitBrowser();
+	}
+
+	
+	@Test
+	public void testTitle() throws IOException, SAXException {
+		String fileName, fileContents, pageTitle, filePrefix = "title_";
+		Parser p;
+		
+		browser.open(url);
+		p = new Parser(browser.getCurrentDomain());
+		pageTitle = browser.getCurrentPageTitle();
+		fileName = filePrefix + p.convertUrlToFileNameWithExtension(browser.getCurrentPagePath());
+		
+		if (!p.isFileAlreadyExists(fileName)) {
+			p.writeToFile(fileName, pageTitle);
+			fail("The file for storing the title of this page ("+fileName+") did not exist previously, creating it on this run.");
+		}
+		fileContents = p.getFileContents(fileName);
+		Assert.assertTrue("The page title of this page does not match the previous page title", fileContents.equals(pageTitle));
+	}
+	/*
+	protected String getNodeDetails(Node node) {
+		String result;
+		result = node.getNodeName() + ", " + node.getNodeValue();
+		return result;
+	}
+	
+	protected String getElementsWithName(String name) {
+		HTMLElement[] elements = browser.getElementsWithName(name);
+		System.out.println("number of elements "+elements.length);
+		System.out.println("get attribute "+elements[0].getAttribute(name));
+		System.out.println("get text "+elements[0].getText());
+		System.out.println("get title "+elements[0].getTitle());
+		System.out.println("get class name "+elements[0].getClassName());
+		System.out.println("get to string "+elements[0].toString());
+		return "";
+	}
+	
+	protected String getElementsWithAttribute(String name, String value) {
+		HTMLElement[] elements = browser.getElementsWithAttribute(name, value);
+		System.out.println("number of elements "+elements.length);
+		System.out.println("get attribute "+elements[0].getAttribute(name));
+		System.out.println("get text "+elements[0].getText());
+		System.out.println("get title "+elements[0].getTitle());
+		System.out.println("get class name "+elements[0].getClassName());
+		System.out.println("get to string "+elements[0].toString());
+		return "";
+	}
+	*/
+	
+	public String removeCarriageReturns(String stringToModify) {
+		return stringToModify.replaceAll("\r", "");
+	}
+	
+	public String trimAllLines(String textToTrim) {
+		return trimAllLines(textToTrim.split("\n")); 
+	}
+	
+	public String trimAllLines(String[] textToTrim) {
+		String trimmedLine, result = "";
+		for (String line : textToTrim) {
+			trimmedLine = line.trim();
+			if (trimmedLine.length() > 0) {
+				result += line.trim() + "\n";
+			}
+		}
+		result.substring(0, result.length() - 1);
+		System.out.println("result: "+result);
+		return result;
+	}
+	
+	public String getTextFromElementId(String elementId) {
+		String rawText = browser.getElementWithID(elementId).getText();
+		return trimAllLines(rawText);
+	}
+	
+	/**
+	 * Compares the contents of the file specified with the String passed in as a parameter. If the file specified does not exist and the folder exists then the file will be automatically created and it's contents will be the string parameter.
+	 * @return
+	 * @throws IOException 
+	 */
+	public boolean compareWithFile(String fileName, String textToCompare) throws IOException {
+		String fileContents;
+		Parser p = new Parser(browser.getCurrentDomain());
+		textToCompare = textToCompare.trim();
+		System.out.println("-- " +textToCompare.substring(textToCompare.length() - 1));
+		
+		if (!p.isFileAlreadyExists(fileName)) {
+			p.writeToFile(fileName, textToCompare);
+			fail("The file used to compare this test to ("+fileName+") did not exist previously. This application will create a template test file on this run.");
+		}
+		// the file being read seems to come back with carriage returns in the String so I ignored them until a better solution is written
+		fileContents = removeCarriageReturns(p.getFileContents(fileName)).trim();
+		
+		fileContents.equals(textToCompare.trim());
+		
+		return false;
+	}
+	
+	@Test
+	public void testNavigation() throws IOException, SAXException {
+		String fileName, filePrefix = "navigation_", pageNavigation;
+		
+		browser.open(url);
+		fileName = filePrefix + Parser.convertUrlToFileNameWithExtension(browser.getCurrentPagePath());
+		pageNavigation = getTextFromElementId("nav-container");
+		
+		Assert.assertTrue("The page navigation of this page does not match the previous page navigation", compareWithFile(fileName, pageNavigation));
+	}
+}

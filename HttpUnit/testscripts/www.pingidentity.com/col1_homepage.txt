@@ -1,0 +1,37 @@
+Call toll free:
+1.877.898.2905
+Email Sales
+Join the
+conversation
+Ping Blog
+Success Stories
+See what our customers are saying.
+View more customers
+Cloud Identity Summit 2011
+Secure the Cloud Now
+The Cloud Identity Summit is where leaders in identity, security, cloud and enterprise come together to define a path to the future.
+Read more
+New from Ping Identity
+Next Gen Cloud Identity Security Capabilities for Salesforce
+SSO and Provisioning for Salesforce Portals • Salesforce as an Authentication Source • Easy, Secure Access to Salesforce APIs.
+Read more
+New Cloud Identity Connectors
+Consumer Identity Tools for Facebook, Google and Others
+Consumer-facing businesses now have an easy way to authenticate customers who are accessing their web properties.
+Read more
+Ping Joins Microsoft IVA
+Strengthens Interoperability with Microsoft Identity Ecosystem
+Ping has joined the Microsoft Interop Vendor Alliance, further extending our reach into the Microsoft partner ecosystem to strengthen interoperability across a broader range of products.
+Read more
+VIDEO
+OAuth Profile for SAML
+Ping Identity and Salesforce.com combine the Web OAuth and the SAML protocols. Allows enterprise, mobile and other applications to interact with Web-based services.
+Read more
+VIDEO
+Learn About the Facebook Cloud Identity Connector
+Ping's Andrew Fernandez introduces the Facebook Cloud Identity Connector.
+Read more
+New White Paper
+The Essentials of OAuth
+APIs provide consistent methods for outside entities to interface with services in the Cloud. Increasingly, cloud data moves through APIs; however, the security & scalability of APIs are currently threatened by a problem called the password anti-pattern.
+Read more

@@ -1,0 +1,35 @@
+Email
+Print
+Ping Identity > Solutions > Cloud Identity Connectors
+Cloud Identity Connectors
+Cloud Identity Connectors install within PingFederate creating connections with cloud identity providers such as Facebook, Yahoo!, Google and Salesforce. Businesses can enable authentication to their cloud-based applications using these connections for both business-to-consumer and business-to-business scenarios. Businesses benefit in the following ways:
+Increase site registration rates
+Improve adoption of cloud services
+Provide a personalized user experience
+Reduce identity management overhead
+Overview
+Benefits
+Salesforce as IdP
+Google as IdP
+Facebook and OpenID
+Your Identity Solution In the Cloud
+Cloud Identity Connectors are currently available for Salesforce CRM, Facebook and OpenID providers including Google, Google Apps, AOL, Yahoo!, and other generic OpenID providers.
+Cloud Identity Connectors create connections to cloud identity providers such as Facebook, Yahoo!, Google and Salesforce.
+Why Choose PingFederate Cloud Identity Connectors? Because it...
+Increases Registration and Purchase Rates
+Increase registration and purchase rates on your consumer-facing Web sites while providing a more personalized experience by empowering customers to easily access your Web sites via their social media logins such as Google and Facebook.
+Reduces User Identity Management Overhead
+By leveraging cloud-based identity providers, enterprises benefit by reducing license, infrastructure and ongoing maintenance costs of traditional identity stores.
+Personalizes Content
+Enterprises can also request additional information about the user to provide a personalized experience and deliver more targeted content.
+Salesforce as IdP
+Growing numbers of Salesforce enterprise customers are deploying Salesforce?s customer and partner portal products. Many of these enterprises want to not only use Salesforce to manage customer and/or partner identities, accounts and authentications, but also to give users SSO access to either their own applications or third-party applications.  The PingFederate Salesforce Cloud Identity Connector makes it possible to create a connection with Salesforce acting as the identity provider (IdP) and the enterprise running PingFederate as the service provider (SP). Incoming users authenticated in Salesforce can SSO to local applications as well as additional third-party applications when PingFederate is set up to act as an IdP.
+PingFederate utilizes Salesforce as an identity provider for customer and partner identities.
+Google as IdP
+The  PingFederate OpenID Cloud Identity Connector provides the option to use Google Apps to manage partner identities. A connection is created with Google Apps which acts as the identity provider (IdP) while the partner running PingFederate acts as the service provider (SP). Incoming users authenticated by Google can SSO to local applications as well as to additional applications operated by third parties.
+By using the Google Apps Cloud Identity Connector, enterprises can offer Internet SSO to partners whose organizations are too small to act as an identity provider.
+Facebook and OpenID
+The PingFederate Facebook and OpenID Cloud Identity Connectors allow enterprises with consumer-facing cloud based applications to provide sign-on and registration using identities maintained at cloud identity providers such as Facebook, Yahoo!, Google and AOL. The Facebook Cloud Identity Connector interfaces with Facebook for authentication, as well as to acquire an access token that can be used by an application to request additional information about the user.
+The OpenID Cloud Identity Connector works with any provider that acts as an OpenID 2.0 provider including Yahoo!, Google, Google Apps and AOL. In addition, to consumer facing use cases, enterprises can use Google Apps as a cloud-based authentication mechanism with business partners who may not have their own identity infrastructures.
+For enterprises supporting multiple cloud identity providers, an “SSO Selector” enables web developers to easily integrate the sign-on user interface to their websites.
+The PingFederate Facebook and OpenID Cloud Identity Connectors enable consumer-facing businesses to provide third party authentication to users who maintain identities at cloud identity providers.

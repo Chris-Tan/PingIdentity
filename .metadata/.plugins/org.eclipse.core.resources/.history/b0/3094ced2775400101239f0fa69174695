@@ -1,0 +1,137 @@
+package com.christan.parser;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.UnsupportedEncodingException;
+import java.io.Writer;
+import java.net.URLEncoder;
+import java.util.Scanner;
+
+import com.meterware.httpunit.WebLink;
+
+public class Parser {
+
+	// Note: you need to create this folder in your project's base directory, I
+	// didn't have a chance to write a method that auto creates folders
+	private String defaultFolderToReadAndWrite = "./testscripts/";
+	private final String defaultFileExtension = ".txt";
+	private final String endOfLine = "\n";
+
+	public Parser(String nameOfFolder) {
+		// if the name of the folder does not have a trailing slash
+		if (nameOfFolder.charAt(nameOfFolder.length() - 1) != '/') {
+			// add a trailing slash
+			nameOfFolder += "/";
+		}
+		defaultFolderToReadAndWrite += nameOfFolder;
+	}
+	// assumptions: not testing other environments e.g. alpha.pingidentity.com
+	// (otherwise I'd remove the domain name so the same test can work for all
+	// environments)
+	public String convertUrlToFileName(String urlToConvert)
+			throws UnsupportedEncodingException {
+		// credit to
+		// http://stackoverflow.com/questions/1652483/convert-between-url-and-windows-filename-java
+		return URLEncoder.encode(urlToConvert, "UTF-8");
+	}
+	
+	public String convertUrlToFileNameWithExtension(String urlToConvert)
+			throws UnsupportedEncodingException {
+		return convertUrlToFileName(urlToConvert) + defaultFileExtension;
+	}
+
+
+	public boolean isFileAlreadyExists(String fileName) {
+		return isFileAlreadyExists(fileName, defaultFolderToReadAndWrite);
+	}
+
+	public boolean isFileAlreadyExists(String fileName, String folderName) {
+		File file = new File(folderName + fileName);
+		return file.exists();
+	}
+
+	public boolean createFile(String fileName) {
+		return false;
+	}
+
+	public boolean writeToFile(String fileName, String fileContents)
+			throws IOException {
+		Writer out = new OutputStreamWriter(new FileOutputStream(
+				defaultFolderToReadAndWrite + fileName));
+		try {
+			out.write(fileContents);
+		} finally {
+			out.close();
+		}
+	}
+
+	public String getFileContents(String fileName) throws IOException {
+		StringBuilder text;
+		
+		Scanner scanner;
+		// this is to prevent adding an extra '\n' at the end of the file/String
+		boolean isFirstLine;
+
+		// if the file does not exist
+		if (!isFileAlreadyExists(fileName, defaultFolderToReadAndWrite)) {
+			throw new IOException(
+					"A specified file does not exist and therefore cannot be read from. File: '"
+							+ fileName + "' Folder: '"
+							+ defaultFolderToReadAndWrite + "'");
+		}
+
+		// initialize variables
+		text = new StringBuilder();
+		scanner = new Scanner(new FileInputStream(defaultFolderToReadAndWrite
+				+ fileName));
+		isFirstLine = true;
+
+		// read the file
+		try {
+			while (scanner.hasNextLine()) {
+				if (isFirstLine) {
+					isFirstLine = false;
+				} else {
+					text.append(endOfLine);
+				}
+				text.append(scanner.nextLine());
+			}
+		} finally {
+			scanner.close();
+		}
+		return text.toString();
+	}
+	
+	public String convertWebLinksToString(WebLink[] links) {
+		String result = "";
+		boolean isFirstLine = true;
+		
+		for (WebLink wl : links) {
+			if (isFirstLine) {
+				isFirstLine = false;
+			} else {
+				result += endOfLine;
+			}
+			result += wl.getURLString();
+		}
+		return result;
+	}
+	
+	public String convertStringArrayToString(String[] stringsToConcatenate) {
+		String result = "";
+		boolean isFirstLine = true;
+		
+		for (String s1 : stringsToConcatenate) {
+			if (isFirstLine) {
+				isFirstLine = false;
+			} else {
+				result += endOfLine;
+			}
+			result += s1;
+		}
+		return result;
+	}
+}

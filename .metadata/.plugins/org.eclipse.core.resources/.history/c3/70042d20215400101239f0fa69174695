@@ -1,0 +1,11 @@
+package com.christan.pagetests;
+
+import org.junit.*;
+
+
+public class HomepageTest extends GenericPageTest {
+	@BeforeClass
+	public static void setUp() {
+		url = "http://www.pingidentity.com/";
+	}
+}

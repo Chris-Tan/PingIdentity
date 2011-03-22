@@ -1,0 +1,8 @@
+https://www.pingidentity.com/images/ping-logo-ie.png
+/images/search.png
+/our-solutions/images/cloud-identity-connector-video-splash_1.png
+/images/blank.gif
+/ce-admin/images/Cloud-Identity-Connectors.png
+/ce-admin/images/Salesforce-as-IdP.png
+/ce-admin/images/Google-as-Idp.png
+/ce-admin/images/Facebook-OpenID-IdP.png
