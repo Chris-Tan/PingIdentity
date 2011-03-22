@@ -135,7 +135,6 @@ public class HttpUnitBrowser {
 		try {
 			return response.getElementWithID(id);
 		} catch (SAXException e) {
-			// TODO Auto-generated catch block
 			return null;
 		}
 	}
@@ -143,7 +142,6 @@ public class HttpUnitBrowser {
 		try {
 			return response.getElementsWithAttribute(name, value);
 		} catch (SAXException e) {
-			// TODO Auto-generated catch block
 			return null;
 		}
 	}
@@ -151,16 +149,22 @@ public class HttpUnitBrowser {
 		try {
 			return response.getElementsWithName(name);
 		} catch (SAXException e) {
-			// TODO Auto-generated catch block
 			return null;
 		}
 	}
 	public String[] getElementNames(){
-			try {
-				return response.getElementNames();
-			} catch (SAXException e) {
-				// TODO Auto-generated catch block
-				return null;
-			}
+		try {
+			return response.getElementNames();
+		} catch (SAXException e) {
+			return null;
+		}
+	}
+	
+	public WebLink[] getLinks() {
+		try {
+			return response.getLinks();
+		} catch (SAXException e) {
+			return null;
+		}
 	}
 }
