@@ -167,4 +167,12 @@ public class HttpUnitBrowser {
 			return null;
 		}
 	}
+	
+	public String[] getMetaTagContent(String attribute, String attributeValue) {
+		try {
+			return response.getMetaTagContent(attribute, attributeValue);
+		} catch (SAXException e) {
+			return null;
+		}
+	}
 }
