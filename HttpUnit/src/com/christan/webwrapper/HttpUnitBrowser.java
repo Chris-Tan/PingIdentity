@@ -175,4 +175,12 @@ public class HttpUnitBrowser {
 			return null;
 		}
 	}
+	
+	public WebImage[] getImages()  {
+		try {
+			return response.getImages();
+		} catch (SAXException e) {
+			return null;
+		}
+	}
 }
