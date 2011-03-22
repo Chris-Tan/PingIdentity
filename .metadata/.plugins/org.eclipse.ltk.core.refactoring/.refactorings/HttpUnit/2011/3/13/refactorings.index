@@ -11,3 +11,6 @@
 1300691618530	Move file
 1300691621915	Delete element
 1300696401107	Delete element
+1300753890636	Rename package 'com.christan.tests'
+1300754959565	Delete element
+1300758866041	Rename local variable 'nameOfFile'

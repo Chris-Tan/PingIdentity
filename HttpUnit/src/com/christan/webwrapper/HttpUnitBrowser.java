@@ -1,7 +1,10 @@
 package com.christan.webwrapper;
 
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
+import java.io.IOException;
+import java.util.ArrayList;
+
+import org.xml.sax.SAXException;
+
 import com.meterware.httpunit.*;
 
 public class HttpUnitBrowser {
@@ -13,21 +16,19 @@ public class HttpUnitBrowser {
 	}
 
 	public void init() {
+		// very important to keep these 2 lines or 3rd party errors will start occurring.
 		HttpUnitOptions.setScriptingEnabled(true);
 		HttpUnitOptions.setExceptionsThrownOnScriptError(false);
 
 		browser = new WebConversation();
 	}
 
-	public boolean open(String url) {
-		boolean result = true;
-		try {
-			response = browser.getResponse(url);
-		} catch (Exception e) {
-			result = false;
-			System.err.println(e.getStackTrace());
-		}
-		return result;
+	public void open(String url) throws IOException, SAXException {
+		response = browser.getResponse(url);
+	}
+	
+	public WebResponse getCurrentPage() {
+		return browser.getCurrentPage();
 	}
 
 	public boolean clickTextLink(String linkText) {
@@ -46,21 +47,89 @@ public class HttpUnitBrowser {
 	}
 
 	public String getCurrentPageUrl() {
-		return browser.getCurrentPage().getURL().toString();
+		return getCurrentPage().getURL().toString();
+	}
+	
+	private int[] findOccurrenceIndexes (String stringToCheck, char itemToFind) {
+		
+		ArrayList<Integer> occurrenceIndices = new ArrayList<Integer>();
+		int occurrenceIndex = stringToCheck.length();
+		int arraySize;
+		int[] result;
+		
+		while(occurrenceIndex >= 0) {
+			occurrenceIndex = stringToCheck.lastIndexOf(itemToFind, occurrenceIndex);
+			if (occurrenceIndex >= 0) {
+				occurrenceIndices.add(occurrenceIndex);
+				// need to decrement the end point or it will be an infinite loop
+				occurrenceIndex--;
+			}
+		} 
+		arraySize = occurrenceIndices.size();
+		result = new int[arraySize];
+		// reverse the order of the list
+		for (int i = 0; i < arraySize; i++) {
+			result[i] = occurrenceIndices.get(arraySize - i - 1);
+		}
+		return result;
+	}
+	
+	public String getCurrentDomain() {
+		// Note: there could be MUCH better error checking done here...
+		String domain, url;
+		char slash = '/';
+		// i.e. http://www.pingidentity.com/ would be 5, 6 and 27
+		int[] slashOccurrences;
+		
+		url = getCurrentPageUrl();
+		
+		slashOccurrences = findOccurrenceIndexes(url, slash);
+		
+		// if there are at least three slash occurrences i.e. http://a.com/
+		if (slashOccurrences.length >= 3) {
+			domain = url.substring(slashOccurrences[1] + 1, slashOccurrences[2]);
+		// else if there's only two slash occurrences i.e. http://a.com
+		} else if (slashOccurrences.length == 2) {
+			domain = url.substring(slashOccurrences[1] + 1);
+		// else someone is using this method wrong
+		} else {
+			domain = null;
+		}
+		return domain;
+	}
+	
+	public String getCurrentPagePath() {
+		// Note: there could be MUCH better error checking done here...
+		String domain, url;
+		String defaultHomepageName = "homepage";
+		char slash = '/';
+		// i.e. http://www.pingidentity.com/ would be 5, 6 and 27
+		int[] slashOccurrences;
+		
+		url = getCurrentPageUrl();
+		
+		slashOccurrences = findOccurrenceIndexes(url, slash);
+		
+		// if there are at least three slash occurrences i.e. http://a.com/aboutus.html
+		if (slashOccurrences.length >= 3) {
+			domain = url.substring(slashOccurrences[2] + 1);
+			// if this is a homepage i.e. http://a.com/
+			if (domain.length() == 0) {
+				domain = defaultHomepageName;
+			}
+		// else if there's only two slash occurrences i.e. http://a.com
+		} else if (slashOccurrences.length == 2) {
+			domain = defaultHomepageName;
+		// else someone is using this method wrong
+		} else {
+			domain = null;
+		}
+		return domain;
 	}
 
-	/*
-	 * public String getAllLinksOnPage(String page) { return null; }//
-	 */
 
-	// assumptions: not testing other environments e.g. alpha.pingidentity.com
-	// (otherwise I'd remove the domain name so the same test can work for all
-	// environments)
-	public String convertUrlToFileName(String urlToConvert)
-			throws UnsupportedEncodingException {
-		// credit to
-		// http://stackoverflow.com/questions/1652483/convert-between-url-and-windows-filename-java
-		return URLEncoder.encode(urlToConvert, "UTF-8");
+	public String getCurrentPageTitle() throws SAXException {
+		return getCurrentPage().getTitle();
 	}
 
 }
