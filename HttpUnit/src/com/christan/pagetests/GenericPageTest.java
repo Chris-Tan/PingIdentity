@@ -10,7 +10,10 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 import com.christan.parser.Parser;
 import com.christan.webwrapper.HttpUnitBrowser;
+import com.meterware.httpunit.Button;
 import com.meterware.httpunit.HTMLElement;
+import com.meterware.httpunit.WebForm;
+import com.meterware.httpunit.WebLink;
 
 public abstract class GenericPageTest {
 	protected String url = null;
@@ -126,7 +129,7 @@ public abstract class GenericPageTest {
 	}
 	
 	/**
-	 * This tests the right nav of the page. It's ignored for now because this column seems to be dynamically generated and will fail on subsequent test passes.
+	 *  It's ignored for now because this column seems to be dynamically generated and will fail on subsequent test passes.
 	 * @throws IOException
 	 * @throws SAXException
 	 */
@@ -152,6 +155,7 @@ public abstract class GenericPageTest {
 	 * @throws IOException
 	 * @throws SAXException
 	 */
+	
 	@Test
 	public void testMetaTagKeywordsContent() throws IOException, SAXException {
 		String pageMetaKeywordsData, filePrefix = "metakeywords";
@@ -171,6 +175,7 @@ public abstract class GenericPageTest {
 	 * @throws IOException
 	 * @throws SAXException
 	 */
+	
 	@Test
 	public void testImagesOnPage() throws IOException, SAXException {
 		String pageImages, filePrefix = "images";
@@ -202,5 +207,44 @@ public abstract class GenericPageTest {
 		fileContents = removeCarriageReturns(p.getFileContents(fileName));
 		
 		return fileContents.equals(pageContents);
+	}
+	
+	@Test
+	public void testLogin() throws IOException, SAXException {
+		final String sUserName = "ctan.pingidentity@gmail.com", sPassword = "password",
+			loginId = "login-link", userNameId = "userID", passwordId = "password", 
+			loginLinkText = "Log In";
+		HTMLElement userName, password, submit;
+		String navTextBefore, navTextAfter;
+		//Parser p = new Parser(browser.getCurrentDomain());
+		
+		// open the page
+		browser.open(url);
+		
+		// check the nav text before
+		navTextBefore = browser.getElementWithID(loginId).getText();
+		
+		// click login
+		browser.clickLinkWithText(loginLinkText);
+		
+		// enter the user name
+		userName = browser.getElementWithID(userNameId);
+		userName.setAttribute("value", sUserName);
+		
+		// enter the password
+		password = browser.getElementWithID(passwordId);
+		password.setAttribute("value", sPassword);
+		
+		// click submit
+		submit = browser.getElementWithID("loginSubmitButton");
+		if(!browser.clickHTMLElement(submit)) {
+			fail("Clicking on the submit button seems to have failed.");
+		}
+		
+		// check the nav text after
+		navTextAfter = browser.getElementWithID(loginId).getText();
+		
+		// if the nav text from before and after are the same, complain!
+		assertFalse("The nav did not change after signing in", navTextAfter.equals(navTextBefore));
 	}
 }

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="com.christan.pagetests" project="HttpUnit" tests="72" started="72" failures="0" errors="0" ignored="64">
+  <testsuite name="com.christan.pagetests.AboutUsTest" time="17.213">
+    <testcase name="testTitle" classname="com.christan.pagetests.AboutUsTest" time="0.0" ignored="true"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.AboutUsTest" time="0.001" ignored="true"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.AboutUsTest" time="0.0" ignored="true"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.AboutUsTest" time="0.0" ignored="true"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.AboutUsTest" time="0.0" ignored="true"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.AboutUsTest" time="0.0" ignored="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.AboutUsTest" time="0.0" ignored="true"/>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.AboutUsTest" time="0.0" ignored="true"/>
+    <testcase name="testLogin" classname="com.christan.pagetests.AboutUsTest" time="17.212"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.OurSolutions" time="14.004">
+    <testcase name="testTitle" classname="com.christan.pagetests.OurSolutions" time="0.001" ignored="true"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.OurSolutions" time="0.0" ignored="true"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.OurSolutions" time="0.0" ignored="true"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.OurSolutions" time="0.0" ignored="true"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.OurSolutions" time="0.001" ignored="true"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.OurSolutions" time="0.0" ignored="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.OurSolutions" time="0.0" ignored="true"/>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.OurSolutions" time="0.0" ignored="true"/>
+    <testcase name="testLogin" classname="com.christan.pagetests.OurSolutions" time="14.002"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.OurSolutionsPingEnableServices" time="13.796">
+    <testcase name="testTitle" classname="com.christan.pagetests.OurSolutionsPingEnableServices" time="0.0" ignored="true"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.OurSolutionsPingEnableServices" time="0.002" ignored="true"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.OurSolutionsPingEnableServices" time="0.001" ignored="true"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.OurSolutionsPingEnableServices" time="0.001" ignored="true"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.OurSolutionsPingEnableServices" time="0.001" ignored="true"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.OurSolutionsPingEnableServices" time="0.0" ignored="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.OurSolutionsPingEnableServices" time="0.0" ignored="true"/>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.OurSolutionsPingEnableServices" time="0.002" ignored="true"/>
+    <testcase name="testLogin" classname="com.christan.pagetests.OurSolutionsPingEnableServices" time="13.789"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.OurSolutionsPingFederate" time="15.185">
+    <testcase name="testTitle" classname="com.christan.pagetests.OurSolutionsPingFederate" time="0.0" ignored="true"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.OurSolutionsPingFederate" time="0.0" ignored="true"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.OurSolutionsPingFederate" time="0.0" ignored="true"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.OurSolutionsPingFederate" time="0.0" ignored="true"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.OurSolutionsPingFederate" time="0.0" ignored="true"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.OurSolutionsPingFederate" time="0.001" ignored="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.OurSolutionsPingFederate" time="0.0" ignored="true"/>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.OurSolutionsPingFederate" time="0.001" ignored="true"/>
+    <testcase name="testLogin" classname="com.christan.pagetests.OurSolutionsPingFederate" time="15.183"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.HomepageTest" time="12.824">
+    <testcase name="testTitle" classname="com.christan.pagetests.HomepageTest" time="0.001" ignored="true"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.HomepageTest" time="0.001" ignored="true"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.HomepageTest" time="0.001" ignored="true"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.HomepageTest" time="0.001" ignored="true"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.HomepageTest" time="0.001" ignored="true"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.HomepageTest" time="0.002" ignored="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.HomepageTest" time="0.001" ignored="true"/>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.HomepageTest" time="0.001" ignored="true"/>
+    <testcase name="testLogin" classname="com.christan.pagetests.HomepageTest" time="12.815"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.OurSolutionsPingConnect" time="15.144">
+    <testcase name="testTitle" classname="com.christan.pagetests.OurSolutionsPingConnect" time="0.0" ignored="true"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.OurSolutionsPingConnect" time="0.0" ignored="true"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.OurSolutionsPingConnect" time="0.0" ignored="true"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.OurSolutionsPingConnect" time="0.0" ignored="true"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.OurSolutionsPingConnect" time="0.0" ignored="true"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.OurSolutionsPingConnect" time="0.0" ignored="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.OurSolutionsPingConnect" time="0.0" ignored="true"/>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.OurSolutionsPingConnect" time="0.001" ignored="true"/>
+    <testcase name="testLogin" classname="com.christan.pagetests.OurSolutionsPingConnect" time="15.143"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.OurSolutionsPingFederateExpress" time="13.534">
+    <testcase name="testTitle" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" time="0.0" ignored="true"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" time="0.001" ignored="true"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" time="0.001" ignored="true"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" time="0.001" ignored="true"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" time="0.0" ignored="true"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" time="0.0" ignored="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" time="0.0" ignored="true"/>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" time="0.0" ignored="true"/>
+    <testcase name="testLogin" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" time="13.53"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.OurSolutionsSsoCloudIdentity" time="12.607">
+    <testcase name="testTitle" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" time="0.0" ignored="true"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" time="0.0" ignored="true"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" time="0.0" ignored="true"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" time="0.0" ignored="true"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" time="0.0" ignored="true"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" time="0.0" ignored="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" time="0.0" ignored="true"/>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" time="0.0" ignored="true"/>
+    <testcase name="testLogin" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" time="12.607"/>
+  </testsuite>
+</testrun>

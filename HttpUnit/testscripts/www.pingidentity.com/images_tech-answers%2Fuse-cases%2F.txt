@@ -1,0 +1,3 @@
+https://www.pingidentity.com/images/ping-logo-ie.png
+/images/search.png
+/images/blank.gif

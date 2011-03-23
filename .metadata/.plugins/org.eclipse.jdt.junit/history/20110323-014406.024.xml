@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="com.christan.pagetests" project="HttpUnit" tests="64" started="64" failures="4" errors="0" ignored="8">
+  <testsuite name="com.christan.pagetests.AboutUsTest" time="21.827">
+    <testcase name="testTitle" classname="com.christan.pagetests.AboutUsTest" time="5.632"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.AboutUsTest" time="2.411"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.AboutUsTest" time="3.42"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.AboutUsTest" time="2.904"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.AboutUsTest" time="2.358"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.AboutUsTest" time="0.001" ignored="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.AboutUsTest" time="2.766">
+      <failure>java.lang.AssertionError: This page has no meta keywords data!
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.testMetaTagKeywordsContent(GenericPageTest.java:165)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.AboutUsTest" time="2.334"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.OurSolutions" time="18.717">
+    <testcase name="testTitle" classname="com.christan.pagetests.OurSolutions" time="2.308"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.OurSolutions" time="2.787"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.OurSolutions" time="2.697"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.OurSolutions" time="2.694"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.OurSolutions" time="2.385"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.OurSolutions" time="0.002" ignored="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.OurSolutions" time="3.206"/>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.OurSolutions" time="2.637"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.OurSolutionsPingEnableServices" time="18.241">
+    <testcase name="testTitle" classname="com.christan.pagetests.OurSolutionsPingEnableServices" time="2.299"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.OurSolutionsPingEnableServices" time="2.177"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.OurSolutionsPingEnableServices" time="2.877"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.OurSolutionsPingEnableServices" time="2.749"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.OurSolutionsPingEnableServices" time="2.709"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.OurSolutionsPingEnableServices" time="0.001" ignored="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.OurSolutionsPingEnableServices" time="3.196">
+      <failure>java.lang.AssertionError: This page has no meta keywords data!
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.testMetaTagKeywordsContent(GenericPageTest.java:165)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.OurSolutionsPingEnableServices" time="2.231"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.OurSolutionsPingFederate" time="21.246">
+    <testcase name="testTitle" classname="com.christan.pagetests.OurSolutionsPingFederate" time="2.663"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.OurSolutionsPingFederate" time="2.601"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.OurSolutionsPingFederate" time="2.59"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.OurSolutionsPingFederate" time="4.61"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.OurSolutionsPingFederate" time="4.131"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.OurSolutionsPingFederate" time="0.0" ignored="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.OurSolutionsPingFederate" time="2.421"/>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.OurSolutionsPingFederate" time="2.228"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.HomepageTest" time="15.896">
+    <testcase name="testTitle" classname="com.christan.pagetests.HomepageTest" time="2.3"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.HomepageTest" time="2.136"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.HomepageTest" time="2.266"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.HomepageTest" time="2.331"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.HomepageTest" time="2.173"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.HomepageTest" time="0.001" ignored="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.HomepageTest" time="2.316"/>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.HomepageTest" time="2.373"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.OurSolutionsPingConnect" time="16.898">
+    <testcase name="testTitle" classname="com.christan.pagetests.OurSolutionsPingConnect" time="3.198"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.OurSolutionsPingConnect" time="2.267"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.OurSolutionsPingConnect" time="2.425"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.OurSolutionsPingConnect" time="2.146"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.OurSolutionsPingConnect" time="2.276"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.OurSolutionsPingConnect" time="0.0" ignored="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.OurSolutionsPingConnect" time="2.366"/>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.OurSolutionsPingConnect" time="2.218"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.OurSolutionsPingFederateExpress" time="16.236">
+    <testcase name="testTitle" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" time="2.18"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" time="2.282"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" time="2.182"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" time="2.548"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" time="2.245"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" time="0.001" ignored="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" time="2.258">
+      <failure>java.lang.AssertionError: This page has no meta keywords data!
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.testMetaTagKeywordsContent(GenericPageTest.java:165)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" time="2.54"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.OurSolutionsSsoCloudIdentity" time="14.965">
+    <testcase name="testTitle" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" time="2.288"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" time="2.161"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" time="2.097"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" time="2.06"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" time="2.138"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" time="0.001" ignored="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" time="2.043">
+      <failure>java.lang.AssertionError: This page has no meta keywords data!
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.testMetaTagKeywordsContent(GenericPageTest.java:165)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" time="2.176"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="com.christan.pagetests" project="HttpUnit" tests="72" started="18" failures="0" errors="0" ignored="16">
+  <testsuite name="com.christan.pagetests.AboutUsTest" time="17.204">
+    <testcase name="testTitle" classname="com.christan.pagetests.AboutUsTest" time="0.0" ignored="true"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.AboutUsTest" time="0.0" ignored="true"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.AboutUsTest" time="0.0" ignored="true"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.AboutUsTest" time="0.0" ignored="true"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.AboutUsTest" time="0.001" ignored="true"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.AboutUsTest" time="0.0" ignored="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.AboutUsTest" time="0.0" ignored="true"/>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.AboutUsTest" time="0.004" ignored="true"/>
+    <testcase name="testLogin" classname="com.christan.pagetests.AboutUsTest" time="17.199"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.OurSolutions" incomplete="true">
+    <testcase name="testTitle" classname="com.christan.pagetests.OurSolutions" time="0.0" ignored="true"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.OurSolutions" time="0.0" ignored="true"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.OurSolutions" time="0.001" ignored="true"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.OurSolutions" time="0.0" ignored="true"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.OurSolutions" time="0.001" ignored="true"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.OurSolutions" time="0.001" ignored="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.OurSolutions" time="0.001" ignored="true"/>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.OurSolutions" time="0.0" ignored="true"/>
+    <testcase name="testLogin" classname="com.christan.pagetests.OurSolutions" incomplete="true"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.OurSolutionsPingEnableServices" incomplete="true">
+    <testcase name="testTitle" classname="com.christan.pagetests.OurSolutionsPingEnableServices" incomplete="true"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.OurSolutionsPingEnableServices" incomplete="true"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.OurSolutionsPingEnableServices" incomplete="true"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.OurSolutionsPingEnableServices" incomplete="true"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.OurSolutionsPingEnableServices" incomplete="true"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.OurSolutionsPingEnableServices" incomplete="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.OurSolutionsPingEnableServices" incomplete="true"/>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.OurSolutionsPingEnableServices" incomplete="true"/>
+    <testcase name="testLogin" classname="com.christan.pagetests.OurSolutionsPingEnableServices" incomplete="true"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.OurSolutionsPingFederate" incomplete="true">
+    <testcase name="testTitle" classname="com.christan.pagetests.OurSolutionsPingFederate" incomplete="true"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.OurSolutionsPingFederate" incomplete="true"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.OurSolutionsPingFederate" incomplete="true"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.OurSolutionsPingFederate" incomplete="true"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.OurSolutionsPingFederate" incomplete="true"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.OurSolutionsPingFederate" incomplete="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.OurSolutionsPingFederate" incomplete="true"/>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.OurSolutionsPingFederate" incomplete="true"/>
+    <testcase name="testLogin" classname="com.christan.pagetests.OurSolutionsPingFederate" incomplete="true"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.HomepageTest" incomplete="true">
+    <testcase name="testTitle" classname="com.christan.pagetests.HomepageTest" incomplete="true"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.HomepageTest" incomplete="true"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.HomepageTest" incomplete="true"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.HomepageTest" incomplete="true"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.HomepageTest" incomplete="true"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.HomepageTest" incomplete="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.HomepageTest" incomplete="true"/>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.HomepageTest" incomplete="true"/>
+    <testcase name="testLogin" classname="com.christan.pagetests.HomepageTest" incomplete="true"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.OurSolutionsPingConnect" incomplete="true">
+    <testcase name="testTitle" classname="com.christan.pagetests.OurSolutionsPingConnect" incomplete="true"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.OurSolutionsPingConnect" incomplete="true"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.OurSolutionsPingConnect" incomplete="true"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.OurSolutionsPingConnect" incomplete="true"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.OurSolutionsPingConnect" incomplete="true"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.OurSolutionsPingConnect" incomplete="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.OurSolutionsPingConnect" incomplete="true"/>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.OurSolutionsPingConnect" incomplete="true"/>
+    <testcase name="testLogin" classname="com.christan.pagetests.OurSolutionsPingConnect" incomplete="true"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.OurSolutionsPingFederateExpress" incomplete="true">
+    <testcase name="testTitle" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" incomplete="true"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" incomplete="true"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" incomplete="true"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" incomplete="true"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" incomplete="true"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" incomplete="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" incomplete="true"/>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" incomplete="true"/>
+    <testcase name="testLogin" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" incomplete="true"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.OurSolutionsSsoCloudIdentity" incomplete="true">
+    <testcase name="testTitle" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" incomplete="true"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" incomplete="true"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" incomplete="true"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" incomplete="true"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" incomplete="true"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" incomplete="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" incomplete="true"/>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" incomplete="true"/>
+    <testcase name="testLogin" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" incomplete="true"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="com.christan.pagetests" project="HttpUnit" tests="72" started="27" failures="0" errors="3" ignored="24">
+  <testsuite name="com.christan.pagetests.AboutUsTest" time="6.865">
+    <testcase name="testTitle" classname="com.christan.pagetests.AboutUsTest" time="0.0" ignored="true"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.AboutUsTest" time="0.0" ignored="true"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.AboutUsTest" time="0.0" ignored="true"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.AboutUsTest" time="0.0" ignored="true"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.AboutUsTest" time="0.0" ignored="true"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.AboutUsTest" time="0.0" ignored="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.AboutUsTest" time="0.0" ignored="true"/>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.AboutUsTest" time="0.0" ignored="true"/>
+    <testcase name="testLogin" classname="com.christan.pagetests.AboutUsTest" time="6.865">
+      <error>java.lang.NullPointerException
+	at com.christan.pagetests.GenericPageTest.testLogin(GenericPageTest.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</error>
+    </testcase>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.OurSolutions" time="4.141">
+    <testcase name="testTitle" classname="com.christan.pagetests.OurSolutions" time="0.001" ignored="true"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.OurSolutions" time="0.0" ignored="true"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.OurSolutions" time="0.0" ignored="true"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.OurSolutions" time="0.0" ignored="true"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.OurSolutions" time="0.0" ignored="true"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.OurSolutions" time="0.0" ignored="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.OurSolutions" time="0.0" ignored="true"/>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.OurSolutions" time="0.001" ignored="true"/>
+    <testcase name="testLogin" classname="com.christan.pagetests.OurSolutions" time="4.138">
+      <error>java.lang.NullPointerException
+	at com.christan.pagetests.GenericPageTest.testLogin(GenericPageTest.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</error>
+    </testcase>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.OurSolutionsPingEnableServices" time="3.842">
+    <testcase name="testTitle" classname="com.christan.pagetests.OurSolutionsPingEnableServices" time="0.001" ignored="true"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.OurSolutionsPingEnableServices" time="0.001" ignored="true"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.OurSolutionsPingEnableServices" time="0.0" ignored="true"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.OurSolutionsPingEnableServices" time="0.0" ignored="true"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.OurSolutionsPingEnableServices" time="0.0" ignored="true"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.OurSolutionsPingEnableServices" time="0.0" ignored="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.OurSolutionsPingEnableServices" time="0.001" ignored="true"/>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.OurSolutionsPingEnableServices" time="0.001" ignored="true"/>
+    <testcase name="testLogin" classname="com.christan.pagetests.OurSolutionsPingEnableServices" time="3.838">
+      <error>java.lang.NullPointerException
+	at com.christan.pagetests.GenericPageTest.testLogin(GenericPageTest.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</error>
+    </testcase>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.OurSolutionsPingFederate" incomplete="true">
+    <testcase name="testTitle" classname="com.christan.pagetests.OurSolutionsPingFederate" incomplete="true"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.OurSolutionsPingFederate" incomplete="true"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.OurSolutionsPingFederate" incomplete="true"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.OurSolutionsPingFederate" incomplete="true"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.OurSolutionsPingFederate" incomplete="true"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.OurSolutionsPingFederate" incomplete="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.OurSolutionsPingFederate" incomplete="true"/>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.OurSolutionsPingFederate" incomplete="true"/>
+    <testcase name="testLogin" classname="com.christan.pagetests.OurSolutionsPingFederate" incomplete="true"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.HomepageTest" incomplete="true">
+    <testcase name="testTitle" classname="com.christan.pagetests.HomepageTest" incomplete="true"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.HomepageTest" incomplete="true"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.HomepageTest" incomplete="true"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.HomepageTest" incomplete="true"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.HomepageTest" incomplete="true"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.HomepageTest" incomplete="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.HomepageTest" incomplete="true"/>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.HomepageTest" incomplete="true"/>
+    <testcase name="testLogin" classname="com.christan.pagetests.HomepageTest" incomplete="true"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.OurSolutionsPingConnect" incomplete="true">
+    <testcase name="testTitle" classname="com.christan.pagetests.OurSolutionsPingConnect" incomplete="true"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.OurSolutionsPingConnect" incomplete="true"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.OurSolutionsPingConnect" incomplete="true"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.OurSolutionsPingConnect" incomplete="true"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.OurSolutionsPingConnect" incomplete="true"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.OurSolutionsPingConnect" incomplete="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.OurSolutionsPingConnect" incomplete="true"/>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.OurSolutionsPingConnect" incomplete="true"/>
+    <testcase name="testLogin" classname="com.christan.pagetests.OurSolutionsPingConnect" incomplete="true"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.OurSolutionsPingFederateExpress" incomplete="true">
+    <testcase name="testTitle" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" incomplete="true"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" incomplete="true"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" incomplete="true"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" incomplete="true"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" incomplete="true"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" incomplete="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" incomplete="true"/>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" incomplete="true"/>
+    <testcase name="testLogin" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" incomplete="true"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.OurSolutionsSsoCloudIdentity" incomplete="true">
+    <testcase name="testTitle" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" incomplete="true"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" incomplete="true"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" incomplete="true"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" incomplete="true"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" incomplete="true"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" incomplete="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" incomplete="true"/>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" incomplete="true"/>
+    <testcase name="testLogin" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" incomplete="true"/>
+  </testsuite>
+</testrun>

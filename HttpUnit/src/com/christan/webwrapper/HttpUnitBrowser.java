@@ -30,14 +30,47 @@ public class HttpUnitBrowser {
 	public WebResponse getCurrentPage() {
 		return browser.getCurrentPage();
 	}
+	
+	public boolean clickHTMLElement(HTMLElement elementToClick) {
+		boolean result = true;
+		Button b;
+		
+		try {
+			b = (Button)elementToClick;
+			b.click();
+			response = getCurrentPage();
+		} catch (Exception e) {
+			result = false;
+			System.err.println(e.getStackTrace());
+		}
+		
+		return result;
+	}
 
-	public boolean clickTextLink(String linkText) {
+	public boolean clickLinkWithText(String linkText) {
 		boolean result = true;
 		WebLink link;
 
 		try {
-			link = response.getLinkWith(linkText);
+			link = getLinkWith(linkText);
 			link.click();
+			response = getCurrentPage();
+		} catch (Exception e) {
+			result = false;
+			System.err.println(e.getStackTrace());
+		}
+
+		return result;
+	}
+	
+	public boolean clickLinkWithID(String linkId) {
+		boolean result = true;
+		WebLink link;
+
+		try {
+			link = getLinkWithID(linkId);
+			link.click();
+			response = getCurrentPage();
 		} catch (Exception e) {
 			result = false;
 			System.err.println(e.getStackTrace());
@@ -46,6 +79,14 @@ public class HttpUnitBrowser {
 		return result;
 	}
 
+	public WebLink getLinkWith(String text) throws SAXException {
+		return response.getLinkWith(text);
+	}
+	
+	public WebLink getLinkWithID(String linkId) throws SAXException {
+		return response.getLinkWithID(linkId);
+	}
+	
 	public String getCurrentPageUrl() {
 		return getCurrentPage().getURL().toString();
 	}
@@ -183,4 +224,12 @@ public class HttpUnitBrowser {
 			return null;
 		}
 	}
+	
+	public WebForm[] getForms() throws SAXException {
+		return response.getForms();
+	}
+	/*
+	public WebForm getFormWithID(String ID) throws SAXException {
+		return response.getFormWithID(ID);
+	}*/
 }

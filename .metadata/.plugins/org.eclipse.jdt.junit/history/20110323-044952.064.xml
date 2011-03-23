@@ -1,0 +1,1346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="com.christan.pagetests" project="HttpUnit" tests="117" started="117" failures="39" errors="0" ignored="13">
+  <testsuite name="com.christan.pagetests.TechAnswersBasics" time="40.265">
+    <testcase name="testTitle" classname="com.christan.pagetests.TechAnswersBasics" time="6.104">
+      <failure>java.lang.AssertionError: The file for storing the title of this page (title_tech-answers%2Fbasics%2F.txt) did not exist previously, creating it on this run to serve as a template to test against on future runs.
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.checkIfFileExistsAndCreateIfNot(GenericPageTest.java:204)
+	at com.christan.pagetests.GenericPageTest.testTitle(GenericPageTest.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testNavigation" classname="com.christan.pagetests.TechAnswersBasics" time="2.315">
+      <failure>java.lang.AssertionError: The file for storing the navigation of this page (navigation_tech-answers%2Fbasics%2F.txt) did not exist previously, creating it on this run to serve as a template to test against on future runs.
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.checkIfFileExistsAndCreateIfNot(GenericPageTest.java:204)
+	at com.christan.pagetests.GenericPageTest.testNavigation(GenericPageTest.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testFooter" classname="com.christan.pagetests.TechAnswersBasics" time="2.298">
+      <failure>java.lang.AssertionError: The file for storing the footer of this page (footer_tech-answers%2Fbasics%2F.txt) did not exist previously, creating it on this run to serve as a template to test against on future runs.
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.checkIfFileExistsAndCreateIfNot(GenericPageTest.java:204)
+	at com.christan.pagetests.GenericPageTest.testFooter(GenericPageTest.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.TechAnswersBasics" time="2.262">
+      <failure>java.lang.AssertionError: The file for storing the links of this page (links_tech-answers%2Fbasics%2F.txt) did not exist previously, creating it on this run to serve as a template to test against on future runs.
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.checkIfFileExistsAndCreateIfNot(GenericPageTest.java:204)
+	at com.christan.pagetests.GenericPageTest.testLinksOnPage(GenericPageTest.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.TechAnswersBasics" time="2.659">
+      <failure>java.lang.AssertionError: The file for storing the col1 of this page (col1_tech-answers%2Fbasics%2F.txt) did not exist previously, creating it on this run to serve as a template to test against on future runs.
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.checkIfFileExistsAndCreateIfNot(GenericPageTest.java:204)
+	at com.christan.pagetests.GenericPageTest.testColumnOneContent(GenericPageTest.java:128)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.TechAnswersBasics" time="0.001" ignored="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.TechAnswersBasics" time="2.87">
+      <failure>java.lang.AssertionError: This page has no meta keywords data!
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.testMetaTagKeywordsContent(GenericPageTest.java:168)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.TechAnswersBasics" time="2.985">
+      <failure>java.lang.AssertionError: The file for storing the images of this page (images_tech-answers%2Fbasics%2F.txt) did not exist previously, creating it on this run to serve as a template to test against on future runs.
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.checkIfFileExistsAndCreateIfNot(GenericPageTest.java:204)
+	at com.christan.pagetests.GenericPageTest.testImagesOnPage(GenericPageTest.java:187)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testLogin" classname="com.christan.pagetests.TechAnswersBasics" time="18.765"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.TechAnswers" time="30.547">
+    <testcase name="testTitle" classname="com.christan.pagetests.TechAnswers" time="2.183">
+      <failure>java.lang.AssertionError: The file for storing the title of this page (title_tech-answers%2F.txt) did not exist previously, creating it on this run to serve as a template to test against on future runs.
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.checkIfFileExistsAndCreateIfNot(GenericPageTest.java:204)
+	at com.christan.pagetests.GenericPageTest.testTitle(GenericPageTest.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testNavigation" classname="com.christan.pagetests.TechAnswers" time="2.488">
+      <failure>java.lang.AssertionError: The file for storing the navigation of this page (navigation_tech-answers%2F.txt) did not exist previously, creating it on this run to serve as a template to test against on future runs.
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.checkIfFileExistsAndCreateIfNot(GenericPageTest.java:204)
+	at com.christan.pagetests.GenericPageTest.testNavigation(GenericPageTest.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testFooter" classname="com.christan.pagetests.TechAnswers" time="2.105">
+      <failure>java.lang.AssertionError: The file for storing the footer of this page (footer_tech-answers%2F.txt) did not exist previously, creating it on this run to serve as a template to test against on future runs.
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.checkIfFileExistsAndCreateIfNot(GenericPageTest.java:204)
+	at com.christan.pagetests.GenericPageTest.testFooter(GenericPageTest.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.TechAnswers" time="2.15">
+      <failure>java.lang.AssertionError: The file for storing the links of this page (links_tech-answers%2F.txt) did not exist previously, creating it on this run to serve as a template to test against on future runs.
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.checkIfFileExistsAndCreateIfNot(GenericPageTest.java:204)
+	at com.christan.pagetests.GenericPageTest.testLinksOnPage(GenericPageTest.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.TechAnswers" time="2.145">
+      <failure>java.lang.AssertionError: The file for storing the col1 of this page (col1_tech-answers%2F.txt) did not exist previously, creating it on this run to serve as a template to test against on future runs.
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.checkIfFileExistsAndCreateIfNot(GenericPageTest.java:204)
+	at com.christan.pagetests.GenericPageTest.testColumnOneContent(GenericPageTest.java:128)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.TechAnswers" time="0.0" ignored="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.TechAnswers" time="2.161">
+      <failure>java.lang.AssertionError: This page has no meta keywords data!
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.testMetaTagKeywordsContent(GenericPageTest.java:168)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.TechAnswers" time="2.148">
+      <failure>java.lang.AssertionError: The file for storing the images of this page (images_tech-answers%2F.txt) did not exist previously, creating it on this run to serve as a template to test against on future runs.
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.checkIfFileExistsAndCreateIfNot(GenericPageTest.java:204)
+	at com.christan.pagetests.GenericPageTest.testImagesOnPage(GenericPageTest.java:187)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testLogin" classname="com.christan.pagetests.TechAnswers" time="15.164"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.AboutUsTest" time="28.177">
+    <testcase name="testTitle" classname="com.christan.pagetests.AboutUsTest" time="2.162"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.AboutUsTest" time="2.188"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.AboutUsTest" time="2.194"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.AboutUsTest" time="2.138"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.AboutUsTest" time="2.209"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.AboutUsTest" time="0.0" ignored="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.AboutUsTest" time="2.056">
+      <failure>java.lang.AssertionError: This page has no meta keywords data!
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.testMetaTagKeywordsContent(GenericPageTest.java:168)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.AboutUsTest" time="2.097"/>
+    <testcase name="testLogin" classname="com.christan.pagetests.AboutUsTest" time="13.132"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.OurSolutions" time="29.786">
+    <testcase name="testTitle" classname="com.christan.pagetests.OurSolutions" time="2.264"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.OurSolutions" time="2.26"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.OurSolutions" time="2.467"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.OurSolutions" time="2.191"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.OurSolutions" time="2.228"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.OurSolutions" time="0.001" ignored="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.OurSolutions" time="2.114"/>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.OurSolutions" time="2.287"/>
+    <testcase name="testLogin" classname="com.christan.pagetests.OurSolutions" time="13.974"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.OurSolutionsPingConnect" time="29.367">
+    <testcase name="testTitle" classname="com.christan.pagetests.OurSolutionsPingConnect" time="2.788"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.OurSolutionsPingConnect" time="2.261"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.OurSolutionsPingConnect" time="2.129"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.OurSolutionsPingConnect" time="2.147"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.OurSolutionsPingConnect" time="2.115"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.OurSolutionsPingConnect" time="0.001" ignored="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.OurSolutionsPingConnect" time="2.108"/>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.OurSolutionsPingConnect" time="2.209"/>
+    <testcase name="testLogin" classname="com.christan.pagetests.OurSolutionsPingConnect" time="13.609"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.OurSolutionsPingFederateExpress" time="28.164">
+    <testcase name="testTitle" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" time="2.083"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" time="2.282"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" time="2.225"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" time="2.138"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" time="2.331"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" time="0.0" ignored="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" time="2.104">
+      <failure>java.lang.AssertionError: This page has no meta keywords data!
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.testMetaTagKeywordsContent(GenericPageTest.java:168)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" time="2.065"/>
+    <testcase name="testLogin" classname="com.christan.pagetests.OurSolutionsPingFederateExpress" time="12.935"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.TechAnswersIntegration" time="28.983">
+    <testcase name="testTitle" classname="com.christan.pagetests.TechAnswersIntegration" time="2.342">
+      <failure>java.lang.AssertionError: The file for storing the title of this page (title_tech-answers%2Fintegration%2F.txt) did not exist previously, creating it on this run to serve as a template to test against on future runs.
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.checkIfFileExistsAndCreateIfNot(GenericPageTest.java:204)
+	at com.christan.pagetests.GenericPageTest.testTitle(GenericPageTest.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testNavigation" classname="com.christan.pagetests.TechAnswersIntegration" time="2.314">
+      <failure>java.lang.AssertionError: The file for storing the navigation of this page (navigation_tech-answers%2Fintegration%2F.txt) did not exist previously, creating it on this run to serve as a template to test against on future runs.
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.checkIfFileExistsAndCreateIfNot(GenericPageTest.java:204)
+	at com.christan.pagetests.GenericPageTest.testNavigation(GenericPageTest.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testFooter" classname="com.christan.pagetests.TechAnswersIntegration" time="2.114">
+      <failure>java.lang.AssertionError: The file for storing the footer of this page (footer_tech-answers%2Fintegration%2F.txt) did not exist previously, creating it on this run to serve as a template to test against on future runs.
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.checkIfFileExistsAndCreateIfNot(GenericPageTest.java:204)
+	at com.christan.pagetests.GenericPageTest.testFooter(GenericPageTest.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.TechAnswersIntegration" time="2.132">
+      <failure>java.lang.AssertionError: The file for storing the links of this page (links_tech-answers%2Fintegration%2F.txt) did not exist previously, creating it on this run to serve as a template to test against on future runs.
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.checkIfFileExistsAndCreateIfNot(GenericPageTest.java:204)
+	at com.christan.pagetests.GenericPageTest.testLinksOnPage(GenericPageTest.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.TechAnswersIntegration" time="2.222">
+      <failure>java.lang.AssertionError: The file for storing the col1 of this page (col1_tech-answers%2Fintegration%2F.txt) did not exist previously, creating it on this run to serve as a template to test against on future runs.
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.checkIfFileExistsAndCreateIfNot(GenericPageTest.java:204)
+	at com.christan.pagetests.GenericPageTest.testColumnOneContent(GenericPageTest.java:128)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.TechAnswersIntegration" time="0.0" ignored="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.TechAnswersIntegration" time="2.096">
+      <failure>java.lang.AssertionError: This page has no meta keywords data!
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.testMetaTagKeywordsContent(GenericPageTest.java:168)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.TechAnswersIntegration" time="2.145">
+      <failure>java.lang.AssertionError: The file for storing the images of this page (images_tech-answers%2Fintegration%2F.txt) did not exist previously, creating it on this run to serve as a template to test against on future runs.
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.checkIfFileExistsAndCreateIfNot(GenericPageTest.java:204)
+	at com.christan.pagetests.GenericPageTest.testImagesOnPage(GenericPageTest.java:187)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testLogin" classname="com.christan.pagetests.TechAnswersIntegration" time="13.614"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.TechAnswersUseCases" time="28.899">
+    <testcase name="testTitle" classname="com.christan.pagetests.TechAnswersUseCases" time="2.079">
+      <failure>java.lang.AssertionError: The file for storing the title of this page (title_tech-answers%2Fuse-cases%2F.txt) did not exist previously, creating it on this run to serve as a template to test against on future runs.
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.checkIfFileExistsAndCreateIfNot(GenericPageTest.java:204)
+	at com.christan.pagetests.GenericPageTest.testTitle(GenericPageTest.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testNavigation" classname="com.christan.pagetests.TechAnswersUseCases" time="2.027">
+      <failure>java.lang.AssertionError: The file for storing the navigation of this page (navigation_tech-answers%2Fuse-cases%2F.txt) did not exist previously, creating it on this run to serve as a template to test against on future runs.
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.checkIfFileExistsAndCreateIfNot(GenericPageTest.java:204)
+	at com.christan.pagetests.GenericPageTest.testNavigation(GenericPageTest.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testFooter" classname="com.christan.pagetests.TechAnswersUseCases" time="2.049">
+      <failure>java.lang.AssertionError: The file for storing the footer of this page (footer_tech-answers%2Fuse-cases%2F.txt) did not exist previously, creating it on this run to serve as a template to test against on future runs.
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.checkIfFileExistsAndCreateIfNot(GenericPageTest.java:204)
+	at com.christan.pagetests.GenericPageTest.testFooter(GenericPageTest.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.TechAnswersUseCases" time="2.045">
+      <failure>java.lang.AssertionError: The file for storing the links of this page (links_tech-answers%2Fuse-cases%2F.txt) did not exist previously, creating it on this run to serve as a template to test against on future runs.
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.checkIfFileExistsAndCreateIfNot(GenericPageTest.java:204)
+	at com.christan.pagetests.GenericPageTest.testLinksOnPage(GenericPageTest.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.TechAnswersUseCases" time="2.115">
+      <failure>java.lang.AssertionError: The file for storing the col1 of this page (col1_tech-answers%2Fuse-cases%2F.txt) did not exist previously, creating it on this run to serve as a template to test against on future runs.
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.checkIfFileExistsAndCreateIfNot(GenericPageTest.java:204)
+	at com.christan.pagetests.GenericPageTest.testColumnOneContent(GenericPageTest.java:128)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.TechAnswersUseCases" time="0.0" ignored="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.TechAnswersUseCases" time="2.112">
+      <failure>java.lang.AssertionError: This page has no meta keywords data!
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.testMetaTagKeywordsContent(GenericPageTest.java:168)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.TechAnswersUseCases" time="2.126">
+      <failure>java.lang.AssertionError: The file for storing the images of this page (images_tech-answers%2Fuse-cases%2F.txt) did not exist previously, creating it on this run to serve as a template to test against on future runs.
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.checkIfFileExistsAndCreateIfNot(GenericPageTest.java:204)
+	at com.christan.pagetests.GenericPageTest.testImagesOnPage(GenericPageTest.java:187)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testLogin" classname="com.christan.pagetests.TechAnswersUseCases" time="14.343"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.OurSolutionsPingEnableServices" time="29.652">
+    <testcase name="testTitle" classname="com.christan.pagetests.OurSolutionsPingEnableServices" time="2.73"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.OurSolutionsPingEnableServices" time="2.172"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.OurSolutionsPingEnableServices" time="2.333"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.OurSolutionsPingEnableServices" time="2.351"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.OurSolutionsPingEnableServices" time="2.104"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.OurSolutionsPingEnableServices" time="0.0" ignored="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.OurSolutionsPingEnableServices" time="2.128">
+      <failure>java.lang.AssertionError: This page has no meta keywords data!
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.testMetaTagKeywordsContent(GenericPageTest.java:168)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.OurSolutionsPingEnableServices" time="2.139"/>
+    <testcase name="testLogin" classname="com.christan.pagetests.OurSolutionsPingEnableServices" time="13.695"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.TechAnswersAdvantages" time="29.594">
+    <testcase name="testTitle" classname="com.christan.pagetests.TechAnswersAdvantages" time="2.202">
+      <failure>java.lang.AssertionError: The file for storing the title of this page (title_tech-answers%2Fadvantages%2F.txt) did not exist previously, creating it on this run to serve as a template to test against on future runs.
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.checkIfFileExistsAndCreateIfNot(GenericPageTest.java:204)
+	at com.christan.pagetests.GenericPageTest.testTitle(GenericPageTest.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testNavigation" classname="com.christan.pagetests.TechAnswersAdvantages" time="2.086">
+      <failure>java.lang.AssertionError: The file for storing the navigation of this page (navigation_tech-answers%2Fadvantages%2F.txt) did not exist previously, creating it on this run to serve as a template to test against on future runs.
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.checkIfFileExistsAndCreateIfNot(GenericPageTest.java:204)
+	at com.christan.pagetests.GenericPageTest.testNavigation(GenericPageTest.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testFooter" classname="com.christan.pagetests.TechAnswersAdvantages" time="2.144">
+      <failure>java.lang.AssertionError: The file for storing the footer of this page (footer_tech-answers%2Fadvantages%2F.txt) did not exist previously, creating it on this run to serve as a template to test against on future runs.
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.checkIfFileExistsAndCreateIfNot(GenericPageTest.java:204)
+	at com.christan.pagetests.GenericPageTest.testFooter(GenericPageTest.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.TechAnswersAdvantages" time="2.132">
+      <failure>java.lang.AssertionError: The file for storing the links of this page (links_tech-answers%2Fadvantages%2F.txt) did not exist previously, creating it on this run to serve as a template to test against on future runs.
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.checkIfFileExistsAndCreateIfNot(GenericPageTest.java:204)
+	at com.christan.pagetests.GenericPageTest.testLinksOnPage(GenericPageTest.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.TechAnswersAdvantages" time="2.103">
+      <failure>java.lang.AssertionError: The file for storing the col1 of this page (col1_tech-answers%2Fadvantages%2F.txt) did not exist previously, creating it on this run to serve as a template to test against on future runs.
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.checkIfFileExistsAndCreateIfNot(GenericPageTest.java:204)
+	at com.christan.pagetests.GenericPageTest.testColumnOneContent(GenericPageTest.java:128)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.TechAnswersAdvantages" time="0.0" ignored="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.TechAnswersAdvantages" time="2.12">
+      <failure>java.lang.AssertionError: This page has no meta keywords data!
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.testMetaTagKeywordsContent(GenericPageTest.java:168)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.TechAnswersAdvantages" time="2.323">
+      <failure>java.lang.AssertionError: The file for storing the images of this page (images_tech-answers%2Fadvantages%2F.txt) did not exist previously, creating it on this run to serve as a template to test against on future runs.
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.checkIfFileExistsAndCreateIfNot(GenericPageTest.java:204)
+	at com.christan.pagetests.GenericPageTest.testImagesOnPage(GenericPageTest.java:187)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testLogin" classname="com.christan.pagetests.TechAnswersAdvantages" time="14.48"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.OurSolutionsPingFederate" time="28.832">
+    <testcase name="testTitle" classname="com.christan.pagetests.OurSolutionsPingFederate" time="2.12"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.OurSolutionsPingFederate" time="2.18"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.OurSolutionsPingFederate" time="2.125"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.OurSolutionsPingFederate" time="2.165"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.OurSolutionsPingFederate" time="2.232"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.OurSolutionsPingFederate" time="0.001" ignored="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.OurSolutionsPingFederate" time="2.222"/>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.OurSolutionsPingFederate" time="2.191"/>
+    <testcase name="testLogin" classname="com.christan.pagetests.OurSolutionsPingFederate" time="13.596"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.HomepageTest" time="27.861">
+    <testcase name="testTitle" classname="com.christan.pagetests.HomepageTest" time="2.419"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.HomepageTest" time="2.208"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.HomepageTest" time="2.043"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.HomepageTest" time="2.109"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.HomepageTest" time="2.132"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.HomepageTest" time="0.001" ignored="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.HomepageTest" time="2.196"/>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.HomepageTest" time="2.045"/>
+    <testcase name="testLogin" classname="com.christan.pagetests.HomepageTest" time="12.708"/>
+  </testsuite>
+  <testsuite name="com.christan.pagetests.OurSolutionsSsoCloudIdentity" time="27.186">
+    <testcase name="testTitle" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" time="2.001"/>
+    <testcase name="testNavigation" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" time="2.068"/>
+    <testcase name="testFooter" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" time="2.106"/>
+    <testcase name="testLinksOnPage" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" time="2.042"/>
+    <testcase name="testColumnOneContent" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" time="2.038"/>
+    <testcase name="testColumnThreeContent" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" time="0.0" ignored="true"/>
+    <testcase name="testMetaTagKeywordsContent" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" time="2.012">
+      <failure>java.lang.AssertionError: This page has no meta keywords data!
+	at org.junit.Assert.fail(Assert.java:93)
+	at com.christan.pagetests.GenericPageTest.testMetaTagKeywordsContent(GenericPageTest.java:168)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:274)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:242)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:240)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:48)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:233)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:303)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+    </testcase>
+    <testcase name="testImagesOnPage" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" time="2.174"/>
+    <testcase name="testLogin" classname="com.christan.pagetests.OurSolutionsSsoCloudIdentity" time="12.743"/>
+  </testsuite>
+</testrun>
