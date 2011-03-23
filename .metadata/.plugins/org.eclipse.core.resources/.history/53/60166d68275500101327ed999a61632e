@@ -47,82 +47,120 @@ public abstract class GenericPageTest {
 	
 	@Test
 	public void testTitle() throws IOException, SAXException {
-		String pageTitle, filePrefix = "title";
+		String fileName, fileContents, pageTitle, filePrefix = "title_";
 		Parser p;
 		
 		browser.open(url);
 		p = new Parser(browser.getCurrentDomain());
 		pageTitle = browser.getCurrentPageTitle();
+		fileName = filePrefix + p.convertUrlToFileNameWithExtension(browser.getCurrentPagePath());
 		
 		if ((pageTitle == null) || (pageTitle.length() == 0)) {
 			fail("This page has no page title!");
 		}
 		
-		Assert.assertTrue("The page title of this page does not match the previous page title", checkIfFileExistsAndCreateIfNot(filePrefix, pageTitle, p));
+		if (!p.isFileAlreadyExists(fileName)) {
+			p.writeToFile(fileName, pageTitle);
+			fail("The file for storing the title of this page ("+fileName+") did not exist previously, creating it on this run.");
+		}
+		fileContents = p.getFileContents(fileName);
+		Assert.assertTrue("The page title of this page does not match the previous page title", fileContents.equals(pageTitle));
 	}
 	
 	@Test
 	public void testNavigation() throws IOException, SAXException {
-		String pageNavigation, filePrefix = "navigation";
+		String fileName, fileContents, pageNavigation, filePrefix = "navigation_";
 		Parser p;
 		
 		browser.open(url);
 		p = new Parser(browser.getCurrentDomain());
 		pageNavigation = getTextFromElementId("nav-container").trim();
+		fileName = filePrefix + p.convertUrlToFileNameWithExtension(browser.getCurrentPagePath());
 		
 		if ((pageNavigation == null) || (pageNavigation.length() == 0)) {
 			fail("This page has no navigation!");
 		}
 		
-		Assert.assertTrue("The page navigation of this page does not match the previous page navigation", checkIfFileExistsAndCreateIfNot(filePrefix, pageNavigation, p));
+		if (!p.isFileAlreadyExists(fileName)) {
+			p.writeToFile(fileName, pageNavigation);
+			fail("The file for storing the navigation of this page ("+fileName+") did not exist previously, creating it on this run.");
+		}
+		// the file being read seems to come back with carriage returns in the String so I ignored them until a better solution is written
+		fileContents = removeCarriageReturns(p.getFileContents(fileName));
+		
+		Assert.assertTrue("The page navigation of this page does not match the previous page navigation", fileContents.equals(pageNavigation));
 	}
 	
 	@Test
 	public void testFooter() throws IOException, SAXException {
-		String pageFooter, filePrefix = "footer";
+		String fileName, fileContents, pageFooter, filePrefix = "footer_";
 		Parser p;
 		
 		browser.open(url);
 		p = new Parser(browser.getCurrentDomain());
 		pageFooter = getTextFromElementId("footer-container").trim();
+		fileName = filePrefix + p.convertUrlToFileNameWithExtension(browser.getCurrentPagePath());
 		
 		if ((pageFooter == null) || (pageFooter.length() == 0)) {
 			fail("This page has no footer!");
 		}
 		
-		Assert.assertTrue("The page footer of this page does not match the previous page navigation", checkIfFileExistsAndCreateIfNot(filePrefix, pageFooter, p));
+		if (!p.isFileAlreadyExists(fileName)) {
+			p.writeToFile(fileName, pageFooter);
+			fail("The file for storing the footer of this page ("+fileName+") did not exist previously, creating it on this run.");
+		}
+		// the file being read seems to come back with carriage returns in the String so I ignored them until a better solution is written
+		fileContents = removeCarriageReturns(p.getFileContents(fileName));
+		
+		Assert.assertTrue("The page footer of this page does not match the previous page navigation", fileContents.equals(pageFooter));
 	}
 	
 	@Test
 	public void testLinksOnPage() throws IOException, SAXException {
-		String pageLinks, filePrefix = "links";
+		String fileName, fileContents, pageLinks, filePrefix = "links_";
 		Parser p;
 		
 		browser.open(url);
 		p = new Parser(browser.getCurrentDomain());
 		pageLinks = p.convertWebLinksToString(browser.getLinks());
+		fileName = filePrefix + p.convertUrlToFileNameWithExtension(browser.getCurrentPagePath());
 		
 		if ((pageLinks == null) || (pageLinks.length() == 0)) {
 			fail("This page has no links!");
 		}
 		
-		Assert.assertTrue("The page links on this page do not match the previous page links", checkIfFileExistsAndCreateIfNot(filePrefix, pageLinks, p));
+		if (!p.isFileAlreadyExists(fileName)) {
+			p.writeToFile(fileName, pageLinks);
+			fail("The file for storing the links on this page ("+fileName+") did not exist previously, creating it on this run.");
+		}
+		// the file being read seems to come back with carriage returns in the String so I ignored them until a better solution is written
+		fileContents = removeCarriageReturns(p.getFileContents(fileName));
+		
+		Assert.assertTrue("The page links on this page do not match the previous page links", fileContents.equals(pageLinks));
 	}
 	
 	@Test
 	public void testColumnOneContent() throws IOException, SAXException {
-		String pageMainContent, filePrefix = "col1";
+		String fileName, fileContents, pageMainContent, filePrefix = "col1_";
 		Parser p;
 		
 		browser.open(url);
 		p = new Parser(browser.getCurrentDomain());
 		pageMainContent = getTextFromElementId("col1").trim();
+		fileName = filePrefix + p.convertUrlToFileNameWithExtension(browser.getCurrentPagePath());
 		
 		if ((pageMainContent == null) || (pageMainContent.length() == 0)) {
 			fail("This page has no main content!");
 		}
 		
-		Assert.assertTrue("The main content on this page does not match the previous page's main content", checkIfFileExistsAndCreateIfNot(filePrefix, pageMainContent, p));
+		if (!p.isFileAlreadyExists(fileName)) {
+			p.writeToFile(fileName, pageMainContent);
+			fail("The file for storing the main content on this page ("+fileName+") did not exist previously, creating it on this run.");
+		}
+		// the file being read seems to come back with carriage returns in the String so I ignored them until a better solution is written
+		fileContents = removeCarriageReturns(p.getFileContents(fileName));
+		
+		Assert.assertTrue("The main content on this page does not match the previous page's main content", fileContents.equals(pageMainContent));
 	}
 	
 	/**
@@ -133,18 +171,26 @@ public abstract class GenericPageTest {
 	@Ignore
 	@Test
 	public void testColumnThreeContent() throws IOException, SAXException {
-		String pageCol3, filePrefix = "col3";
+		String fileName, fileContents, pageCol3, filePrefix = "col3_";
 		Parser p;
 		
 		browser.open(url);
 		p = new Parser(browser.getCurrentDomain());
 		pageCol3 = getTextFromElementId("col3").trim();
+		fileName = filePrefix + p.convertUrlToFileNameWithExtension(browser.getCurrentPagePath());
 		
 		if ((pageCol3 == null) || (pageCol3.length() == 0)) {
 			fail("This page has no col3 content!");
 		}
 		
-		Assert.assertTrue("The right nav (col3) content on this page does not match the previous page's right nav content", checkIfFileExistsAndCreateIfNot(filePrefix, pageCol3, p));
+		if (!p.isFileAlreadyExists(fileName)) {
+			p.writeToFile(fileName, pageCol3);
+			fail("The file for storing the right nav (col3) content on this page ("+fileName+") did not exist previously, creating it on this run.");
+		}
+		// the file being read seems to come back with carriage returns in the String so I ignored them until a better solution is written
+		fileContents = removeCarriageReturns(p.getFileContents(fileName));
+		
+		Assert.assertTrue("The right nav (col3) content on this page does not match the previous page's right nav content", fileContents.equals(pageCol3));
 	}
 	
 	/**
@@ -154,16 +200,26 @@ public abstract class GenericPageTest {
 	 */
 	@Test
 	public void testMetaTagKeywordsContent() throws IOException, SAXException {
-		String pageMetaKeywordsData, filePrefix = "metakeywords";
+		String fileName, fileContents, pageMetaKeywordsData, filePrefix = "metakeywords_";
 		Parser p;
 		
 		browser.open(url);
 		p = new Parser(browser.getCurrentDomain());
 		pageMetaKeywordsData = p.convertStringArrayToString(browser.getMetaTagContent("name", "Keywords"));
+		fileName = filePrefix + p.convertUrlToFileNameWithExtension(browser.getCurrentPagePath());
+		
 		if ((pageMetaKeywordsData == null) || (pageMetaKeywordsData.length() == 0)) {
 			fail("This page has no meta keywords data!");
 		}
-		Assert.assertTrue("The meta keywords data of this page does not match the previous page's meta keywords data", checkIfFileExistsAndCreateIfNot(filePrefix, pageMetaKeywordsData, p));
+		
+		if (!p.isFileAlreadyExists(fileName)) {
+			p.writeToFile(fileName, pageMetaKeywordsData);
+			fail("The file for storing the meta keywords data of this page ("+fileName+") did not exist previously, creating it on this run.");
+		}
+		// the file being read seems to come back with carriage returns in the String so I ignored them until a better solution is written
+		fileContents = removeCarriageReturns(p.getFileContents(fileName));
+		
+		Assert.assertTrue("The meta keywords data of this page does not match the previous page's meta keywords data", fileContents.equals(pageMetaKeywordsData));
 	}
 	
 	/**
@@ -183,14 +239,15 @@ public abstract class GenericPageTest {
 	}
 
 	/**
-	 * This method takes in the file prefix and compares the contents of pageContents with the file on disk. If none exists then a new file will be created and populated with pageContents and an Assert.Fail() will be called.
-	 * @param filePrefix {String} the prefix of the file to test/write to. The rest of the file name will be the URL path (i.e. non-domain) converted to text + the file extension (i.e. ".txt")
-	 * @param pageContents {String} the calling method must pass in the contents that needs to be tested/written to file.
-	 * @param p {Parser} an instantiated parser in order to read/write files from/to disk
+	 * 
+	 * @param filePrefix
+	 * @param pageContents
+	 * @param p
 	 * @return true if the contents of the file matches the pageContents
-	 * @throws IOException on conversion error or file read/write error
+	 * @throws IOException
 	 */
 	public boolean checkIfFileExistsAndCreateIfNot(String filePrefix, String pageContents, Parser p) throws IOException {
+		//p = new Parser(browser.getCurrentDomain());
 		String fileContents;
 		String fileName = filePrefix + "_" + p.convertUrlToFileNameWithExtension(browser.getCurrentPagePath());
 		

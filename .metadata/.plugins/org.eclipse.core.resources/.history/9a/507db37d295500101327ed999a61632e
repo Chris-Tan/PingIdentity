@@ -58,6 +58,10 @@ public abstract class GenericPageTest {
 			fail("This page has no page title!");
 		}
 		
+		browser.open(url);
+		p = new Parser(browser.getCurrentDomain());
+		pageImages = p.convertWebImagesToString(browser.getImages());
+		Assert.assertTrue("The image sources of this page does not match the previous page's image sources", checkIfFileExistsAndCreateIfNot(filePrefix, pageImages, p));
 		Assert.assertTrue("The page title of this page does not match the previous page title", checkIfFileExistsAndCreateIfNot(filePrefix, pageTitle, p));
 	}
 	
@@ -69,12 +73,18 @@ public abstract class GenericPageTest {
 		browser.open(url);
 		p = new Parser(browser.getCurrentDomain());
 		pageNavigation = getTextFromElementId("nav-container").trim();
+		fileName = filePrefix + p.convertUrlToFileNameWithExtension(browser.getCurrentPagePath());
 		
 		if ((pageNavigation == null) || (pageNavigation.length() == 0)) {
 			fail("This page has no navigation!");
 		}
 		
-		Assert.assertTrue("The page navigation of this page does not match the previous page navigation", checkIfFileExistsAndCreateIfNot(filePrefix, pageNavigation, p));
+		browser.open(url);
+		p = new Parser(browser.getCurrentDomain());
+		pageImages = p.convertWebImagesToString(browser.getImages());
+		Assert.assertTrue("The image sources of this page does not match the previous page's image sources", checkIfFileExistsAndCreateIfNot(filePrefix, pageImages, p));
+		
+		Assert.assertTrue("The page navigation of this page does not match the previous page navigation", fileContents.equals(pageNavigation));
 	}
 	
 	@Test
@@ -85,12 +95,18 @@ public abstract class GenericPageTest {
 		browser.open(url);
 		p = new Parser(browser.getCurrentDomain());
 		pageFooter = getTextFromElementId("footer-container").trim();
+		fileName = filePrefix + p.convertUrlToFileNameWithExtension(browser.getCurrentPagePath());
 		
 		if ((pageFooter == null) || (pageFooter.length() == 0)) {
 			fail("This page has no footer!");
 		}
 		
-		Assert.assertTrue("The page footer of this page does not match the previous page navigation", checkIfFileExistsAndCreateIfNot(filePrefix, pageFooter, p));
+		browser.open(url);
+		p = new Parser(browser.getCurrentDomain());
+		pageImages = p.convertWebImagesToString(browser.getImages());
+		Assert.assertTrue("The image sources of this page does not match the previous page's image sources", checkIfFileExistsAndCreateIfNot(filePrefix, pageImages, p));
+		
+		Assert.assertTrue("The page footer of this page does not match the previous page navigation", fileContents.equals(pageFooter));
 	}
 	
 	@Test
@@ -101,12 +117,18 @@ public abstract class GenericPageTest {
 		browser.open(url);
 		p = new Parser(browser.getCurrentDomain());
 		pageLinks = p.convertWebLinksToString(browser.getLinks());
+		fileName = filePrefix + p.convertUrlToFileNameWithExtension(browser.getCurrentPagePath());
 		
 		if ((pageLinks == null) || (pageLinks.length() == 0)) {
 			fail("This page has no links!");
 		}
 		
-		Assert.assertTrue("The page links on this page do not match the previous page links", checkIfFileExistsAndCreateIfNot(filePrefix, pageLinks, p));
+		browser.open(url);
+		p = new Parser(browser.getCurrentDomain());
+		pageImages = p.convertWebImagesToString(browser.getImages());
+		Assert.assertTrue("The image sources of this page does not match the previous page's image sources", checkIfFileExistsAndCreateIfNot(filePrefix, pageImages, p));
+		
+		Assert.assertTrue("The page links on this page do not match the previous page links", fileContents.equals(pageLinks));
 	}
 	
 	@Test
@@ -117,12 +139,18 @@ public abstract class GenericPageTest {
 		browser.open(url);
 		p = new Parser(browser.getCurrentDomain());
 		pageMainContent = getTextFromElementId("col1").trim();
+		fileName = filePrefix + p.convertUrlToFileNameWithExtension(browser.getCurrentPagePath());
 		
 		if ((pageMainContent == null) || (pageMainContent.length() == 0)) {
 			fail("This page has no main content!");
 		}
 		
-		Assert.assertTrue("The main content on this page does not match the previous page's main content", checkIfFileExistsAndCreateIfNot(filePrefix, pageMainContent, p));
+		browser.open(url);
+		p = new Parser(browser.getCurrentDomain());
+		pageImages = p.convertWebImagesToString(browser.getImages());
+		Assert.assertTrue("The image sources of this page does not match the previous page's image sources", checkIfFileExistsAndCreateIfNot(filePrefix, pageImages, p));
+		
+		Assert.assertTrue("The main content on this page does not match the previous page's main content", fileContents.equals(pageMainContent));
 	}
 	
 	/**
@@ -139,6 +167,7 @@ public abstract class GenericPageTest {
 		browser.open(url);
 		p = new Parser(browser.getCurrentDomain());
 		pageCol3 = getTextFromElementId("col3").trim();
+
 		
 		if ((pageCol3 == null) || (pageCol3.length() == 0)) {
 			fail("This page has no col3 content!");
@@ -191,6 +220,7 @@ public abstract class GenericPageTest {
 	 * @throws IOException on conversion error or file read/write error
 	 */
 	public boolean checkIfFileExistsAndCreateIfNot(String filePrefix, String pageContents, Parser p) throws IOException {
+		//p = new Parser(browser.getCurrentDomain());
 		String fileContents;
 		String fileName = filePrefix + "_" + p.convertUrlToFileNameWithExtension(browser.getCurrentPagePath());
 		

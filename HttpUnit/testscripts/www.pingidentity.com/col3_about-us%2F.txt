@@ -1,8 +1,0 @@
-Email
-Print
-Ping Identity > About Us
-About Us
-We are Ping Identity
-We provide Internet Identity Security and Single Sign-On (SSO) solutions to hundreds of enterprises, government agencies and services providers – including 56 of the Fortune 500. Our identity solutions, PingFederate and PingConnect, allow users to safely access multiple Internet applications without the need to log in again and again, increasing productivity and lowering help-desk and administrative costs.
-Our mission is to help our customers solve their Internet Identity Security and Single Sign-On problems quickly, simply and effectively. Our standards-based solutions simplify complex security and integration challenges, and deploy in hours or days - not weeks or months. We value integrity as much as quality and simplicity, and are accountable, open and honest in everything we do.
-Since our founding in 2002, we’ve come to be recognized as a leader in Internet identity security and Federated Identity Management. We’re proud to have won recognition and honors from a number of industry associations. We’re most proud of the reputation we’ve earned among our customers and partners for the quality of our products and the integrity of our people.

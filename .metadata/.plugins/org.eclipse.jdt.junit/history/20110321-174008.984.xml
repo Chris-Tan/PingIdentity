@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testrun name="com.christan.pagetests" project="HttpUnit" tests="2" started="2" failures="0" errors="0" ignored="0">
-  <testsuite name="com.christan.pagetests.AboutUsTest" time="0.0">
-    <testcase name="testTitle" classname="com.christan.pagetests.AboutUsTest" time="0.0"/>
-  </testsuite>
-  <testsuite name="com.christan.pagetests.HomepageTest" time="0.0">
-    <testcase name="testTitle" classname="com.christan.pagetests.HomepageTest" time="0.0"/>
-  </testsuite>
-</testrun>

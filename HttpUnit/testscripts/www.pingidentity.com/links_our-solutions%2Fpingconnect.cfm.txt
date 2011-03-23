@@ -29,7 +29,7 @@
 /knowledge-center/SSO-and-Federated-Identity.cfm
 /knowledge-center/Single-Sign-On-for-SaaS.cfm
 /knowledge-center/SAML-Tutorials-and-Resources.cfm
-/knowledge-center/CardSpace-OpenID.cfm
+/knowledge-center/OpenID-OAuth-Info-Cards.cfm
 /knowledge-center/Security-Token-Service.cfm
 /customers/
 /customers/index.cfm
@@ -53,9 +53,9 @@ http://documentation.pingidentity.com/
 /about-us/contact-us.cfm
 /overlay/email-sales.cfm
 /loader.cfm?csModule=controls/custom/loader&elementid=1472&datapageid=3657
-/support-and-downloads/download.cfm?item=/unprotected/upload/ds_ping_connect.pdf
-/support-and-downloads/download.cfm?item=/unprotected/upload/td_pingconnect_six_steps_to_implementation.pdf
-/support-and-downloads/download.cfm?item=6608
+/support-and-downloads/download.cfm/PingConnectDataSheet?item=/unprotected/upload/ds_ping_connect.pdf
+/support-and-downloads/download.cfm/6StepstoImplementPingConnect?item=/unprotected/upload/td_pingconnect_six_steps_to_implementation.pdf
+/support-and-downloads/download.cfm/SSOtotheCloud?item=6608
 /support-and-downloads/index.cfm
 /overlay/email-page.cfm?pageID=1549&pageName=PingConnectOn-DemandSingleSign-On(SSO)forSoftware-as-a-Service(SaaS)&pageURL=/our-solutions/pingconnect.cfm&
 /our-solutions/pingconnect.cfm
@@ -93,7 +93,7 @@ mailto:sales@pingidentity.com
 /knowledge-center/SSO-and-Federated-Identity.cfm
 /knowledge-center/Single-Sign-On-for-SaaS.cfm
 /knowledge-center/SAML-Tutorials-and-Resources.cfm
-/knowledge-center/CardSpace-OpenID.cfm
+/knowledge-center/OpenID-OAuth-Info-Cards.cfm
 /knowledge-center/Security-Token-Service.cfm
 /customers/
 /customers/index.cfm

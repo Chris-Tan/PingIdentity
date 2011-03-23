@@ -139,6 +139,7 @@ public abstract class GenericPageTest {
 		browser.open(url);
 		p = new Parser(browser.getCurrentDomain());
 		pageCol3 = getTextFromElementId("col3").trim();
+
 		
 		if ((pageCol3 == null) || (pageCol3.length() == 0)) {
 			fail("This page has no col3 content!");

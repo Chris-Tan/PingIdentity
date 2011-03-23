@@ -1,5 +1,0 @@
-package com.christan.pagetests;
-
-public abstract class GenericPageTest {
-
-}

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="22" version="2.0">
+<workbench progressCount="30" version="2.0">
 <workbenchAdvisor/>
 <window height="738" maximized="true" width="1024" x="154" y="0">
 <fastViewData fastViewLocation="1024"/>
@@ -31,22 +31,17 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
-<part id="2"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="C:/Users/user/PingIdentity/HttpUnit/src/com/christan/tests/Main.java" title="Main.java" tooltip="HttpUnit/src/com/christan/tests/Main.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HttpUnit/src/com/christan/tests/Main.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="741" selectionTopPixel="44"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="OurSolutionsSsoCloudIdentity.java" partName="OurSolutionsSsoCloudIdentity.java" path="C:/Users/user/PingIdentity/HttpUnit/src/com/christan/pagetests/OurSolutionsSsoCloudIdentity.java" title="OurSolutionsSsoCloudIdentity.java" tooltip="HttpUnit/src/com/christan/pagetests/OurSolutionsSsoCloudIdentity.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HttpUnit/src/com/christan/pagetests/OurSolutionsSsoCloudIdentity.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="239" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HttpUnitBrowser.java" partName="HttpUnitBrowser.java" path="C:/Users/user/PingIdentity/HttpUnit/src/com/christan/webwrapper/HttpUnitBrowser.java" title="HttpUnitBrowser.java" tooltip="HttpUnit/src/com/christan/webwrapper/HttpUnitBrowser.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HttpUnit/src/com/christan/webwrapper/HttpUnitBrowser.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1118" selectionTopPixel="163"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PingServlet.java" partName="PingServlet.java" path="C:/Users/user/PingIdentity/HttpUnit/src/com/christan/webwrapper/PingServlet.java" title="PingServlet.java" tooltip="HttpUnit/src/com/christan/webwrapper/PingServlet.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HttpUnit/src/com/christan/webwrapper/PingServlet.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="157" selectionTopPixel="71"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GenericPageTest.java" partName="GenericPageTest.java" path="C:/Users/user/PingIdentity/HttpUnit/src/com/christan/pagetests/GenericPageTest.java" title="GenericPageTest.java" tooltip="HttpUnit/src/com/christan/pagetests/GenericPageTest.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HttpUnit/src/com/christan/pagetests/GenericPageTest.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6766" selectionTopPixel="2635"/>
 </editor>
 </editors>
 <views>
@@ -73,12 +68,10 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Errors (8 items)"/>
-<category IMemento.internal.id="Warnings"/>
+<expanded>&#x0A;<category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
 </expanded>
-<columnWidths org.eclipse.ui.ide.locationField="54" org.eclipse.ui.ide.markerType="79" org.eclipse.ui.ide.pathField="104" org.eclipse.ui.ide.resourceField="79" org.eclipse.ui.ide.severityAndDescriptionField="315"/>
+<columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
@@ -132,7 +125,7 @@
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.junit.ResultView" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
@@ -199,7 +192,7 @@
 <layout>
 <mainWindow>
 <info folder="true" part="left">
-<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.jdt.junit.ResultView" appearance="2" expanded="2">
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="Hierarchy"/>
 <page content="org.eclipse.jdt.junit.ResultView" label="JUnit"/>
@@ -221,7 +214,7 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.21549815" ratioLeft="292" ratioRight="1063" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.725552" ratioLeft="460" ratioRight="174" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottom" ratio="0.6072555" ratioLeft="385" ratioRight="249" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
@@ -299,58 +292,42 @@
 <view id="org.eclipse.debug.ui.BreakpointView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.7488226" ratioLeft="477" ratioRight="160" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.7996845" ratioLeft="507" ratioRight="127" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.debug.ui.DisplayView" label="LabelNotFound"/>
 <page content="org.eclipse.search.SearchResultView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.4486373" ratioLeft="214" ratioRight="263" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
-<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info part="org.eclipse.ui.editorss" ratio="0.70039684" ratioLeft="353" ratioRight="151" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="679" ratioRight="679" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.42509225" ratioLeft="576" ratioRight="779" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
@@ -362,164 +339,167 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HttpUnit/src/com/christan/tests/Main.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HttpUnit/src/com/christan/webwrapper/ServletRunnerWrapper.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HttpUnit/src/com/christan/webwrapper/HttpUnitWrapper.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HttpUnit/src/com/christan/webwrapper/PingServlet.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HttpUnit/src/com/meterware/httpunit/WebWindow.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HttpUnit/src/com/meterware/httpunit/parsing/NekoHTMLParser.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HttpUnit/src/com/christan/webwrapper/WebDriverWrapper.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HttpUnit/src/com/christan/webwrapper/HttpUnitBrowser.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HttpUnit/src/com/christan/pagetests/GenericPageTest.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HttpUnit/src/com/christan/pagetests/AboutUsTest.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HttpUnit/src/com/christan/pagetests/HomepageTest.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HttpUnit/src/com/christan/pagetests/OurSolutions.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HttpUnit/src/com/christan/pagetests/OurSolutionsPingFederate.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HttpUnit/src/com/christan/pagetests/OurSolutionsPingConnect.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HttpUnit/src/com/christan/pagetests/Main.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HttpUnit/src/com/christan/pagetests/OurSolutionsPingFederateExpress.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HttpUnit/src/com/christan/pagetests/OurSolutionsPingEnableServices.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HttpUnit/src/com/christan/pagetests/OurSolutionsSsoCloudIdentity.java"/>
 </editors>
-<item historyLabel="ServletRunnerWrapper.java" index="1">
+<item historyLabel="AboutUsTest.java" index="2">
+<position info="not_deleted" x="113" y="0"/>
+</item>
+<item historyLabel="HomepageTest.java" index="3">
+<position info="not_deleted" x="114" y="0"/>
+</item>
+<item historyLabel="AboutUsTest.java" index="2">
+<position info="not_deleted" x="113" y="0"/>
+</item>
+<item historyLabel="HomepageTest.java" index="3">
+<position info="not_deleted" x="114" y="0"/>
+</item>
+<item historyLabel="OurSolutions.java" index="4">
+<position info="not_deleted" x="126" y="0"/>
+</item>
+<item historyLabel="HomepageTest.java" index="3">
+<position info="not_deleted" x="159" y="28"/>
+</item>
+<item historyLabel="OurSolutionsPingFederate.java" index="5">
 <position/>
 </item>
-<item historyLabel="WebWindow.java" index="4">
-<position info="not_deleted" x="5512" y="83"/>
+<item historyLabel="HomepageTest.java" index="3">
+<position info="not_deleted" x="114" y="0"/>
 </item>
-<item historyLabel="ServletRunnerWrapper.java" index="1">
-<position info="not_deleted" x="441" y="29"/>
-</item>
-<item historyLabel="Main.java" index="0">
+<item historyLabel="OurSolutionsPingFederate.java" index="5">
 <position/>
 </item>
-<item historyLabel="Main.java" index="0">
+<item historyLabel="OurSolutions.java" index="4">
+<position info="not_deleted" x="126" y="0"/>
+</item>
+<item historyLabel="OurSolutionsPingFederate.java" index="5">
 <position/>
 </item>
-<item historyLabel="Main.java" index="0">
+<item historyLabel="OurSolutions.java" index="4">
+<position info="not_deleted" x="126" y="0"/>
+</item>
+<item historyLabel="OurSolutionsPingFederate.java" index="5">
 <position/>
 </item>
-<item historyLabel="Main.java" index="0">
+<item historyLabel="OurSolutions.java" index="4">
+<position info="not_deleted" x="126" y="0"/>
+</item>
+<item historyLabel="OurSolutionsPingConnect.java" index="6">
 <position/>
 </item>
-<item historyLabel="NekoHTMLParser.java" index="5">
-<position info="not_deleted" x="2701" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
+<item historyLabel="OurSolutionsPingFederate.java" index="5">
 <position/>
 </item>
-<item historyLabel="HttpUnitWrapper.java" index="2">
-<position info="not_deleted" x="1165" y="0"/>
+<item historyLabel="OurSolutions.java" index="4">
+<position info="not_deleted" x="126" y="0"/>
 </item>
-<item historyLabel="Main.java" index="0">
+<item historyLabel="OurSolutionsPingFederate.java" index="5">
 <position/>
 </item>
-<item historyLabel="ServletRunnerWrapper.java" index="1">
-<position info="not_deleted" x="436" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
+<item historyLabel="OurSolutionsPingConnect.java" index="6">
 <position/>
 </item>
-<item historyLabel="ServletRunnerWrapper.java" index="1">
-<position info="not_deleted" x="436" y="0"/>
-</item>
-<item historyLabel="ServletRunnerWrapper.java" index="1">
-<position info="not_deleted" x="764" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
+<item historyLabel="GenericPageTest.java" index="1">
 <position/>
 </item>
-<item historyLabel="HttpUnitWrapper.java" index="2">
-<position info="not_deleted" x="1165" y="0"/>
-</item>
-<item historyLabel="ServletRunnerWrapper.java" index="1">
-<position info="not_deleted" x="764" y="0"/>
-</item>
-<item historyLabel="HttpUnitWrapper.java" index="2">
-<position info="not_deleted" x="1165" y="0"/>
-</item>
-<item historyLabel="ServletRunnerWrapper.java" index="1">
-<position info="not_deleted" x="764" y="0"/>
-</item>
-<item historyLabel="HttpUnitWrapper.java" index="2">
-<position info="not_deleted" x="1165" y="0"/>
-</item>
-<item historyLabel="ServletRunnerWrapper.java" index="1">
-<position info="not_deleted" x="764" y="0"/>
-</item>
-<item historyLabel="WebDriverWrapper.java" index="6">
-<position info="not_deleted" x="707" y="0"/>
-</item>
-<item historyLabel="WebDriverWrapper.java" index="6">
-<position info="not_deleted" x="698" y="0"/>
-</item>
-<item historyLabel="HttpUnitWrapper.java" index="2">
-<position info="not_deleted" x="1165" y="0"/>
-</item>
-<item historyLabel="WebDriverWrapper.java" index="6">
-<position info="not_deleted" x="698" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
+<item historyLabel="OurSolutionsPingConnect.java" index="6">
 <position/>
 </item>
-<item historyLabel="HttpUnitBrowser.java" index="7">
-<position info="not_deleted" x="835" y="0"/>
+<item historyLabel="HttpUnitBrowser.java" index="0">
+<position info="not_deleted" x="4822" y="0"/>
 </item>
-<item historyLabel="HttpUnitBrowser.java" index="7">
-<position info="not_deleted" x="833" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
+<item historyLabel="OurSolutionsPingConnect.java" index="6">
 <position/>
 </item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="586" y="0"/>
+<item historyLabel="Main.java" index="7">
+<position info="not_deleted" x="984" y="0"/>
 </item>
-<item historyLabel="HttpUnitBrowser.java" index="7">
-<position info="not_deleted" x="564" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="586" y="0"/>
-</item>
-<item historyLabel="HttpUnitBrowser.java" index="7">
-<position info="not_deleted" x="564" y="0"/>
-</item>
-<item historyLabel="HttpUnitBrowser.java" index="7">
-<position info="not_deleted" x="1002" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="586" y="0"/>
-</item>
-<item historyLabel="HttpUnitBrowser.java" index="7">
-<position info="not_deleted" x="1002" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="326" y="0"/>
-</item>
-<item historyLabel="HttpUnitBrowser.java" index="7">
-<position info="not_deleted" x="1002" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="326" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="586" y="0"/>
-</item>
-<item historyLabel="HttpUnitBrowser.java" index="7">
-<position info="not_deleted" x="1002" y="0"/>
-</item>
-<item historyLabel="HttpUnitBrowser.java" index="7">
-<position info="not_deleted" x="1142" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="741" y="0"/>
-</item>
-<item historyLabel="PingServlet.java" index="3">
-<position info="not_deleted" x="157" y="0"/>
-</item>
-<item historyLabel="HttpUnitBrowser.java" index="7">
-<position info="not_deleted" x="1142" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
+<item historyLabel="OurSolutionsPingConnect.java" index="6">
 <position/>
 </item>
-<item historyLabel="PingServlet.java" index="3">
-<position info="not_deleted" x="157" y="0"/>
-</item>
-<item historyLabel="HttpUnitBrowser.java" index="7">
-<position info="not_deleted" x="1118" y="0"/>
-</item>
-<item active="true" historyLabel="Main.java" index="0">
+<item historyLabel="OurSolutionsPingFederate.java" index="5">
 <position/>
+</item>
+<item historyLabel="OurSolutionsPingConnect.java" index="6">
+<position/>
+</item>
+<item historyLabel="OurSolutionsPingFederate.java" index="5">
+<position/>
+</item>
+<item historyLabel="OurSolutionsPingConnect.java" index="6">
+<position/>
+</item>
+<item historyLabel="OurSolutionsPingFederateExpress.java" index="8">
+<position/>
+</item>
+<item historyLabel="OurSolutionsPingConnect.java" index="6">
+<position/>
+</item>
+<item historyLabel="OurSolutionsPingFederateExpress.java" index="8">
+<position/>
+</item>
+<item historyLabel="OurSolutionsPingFederate.java" index="5">
+<position/>
+</item>
+<item historyLabel="OurSolutionsPingFederateExpress.java" index="8">
+<position/>
+</item>
+<item historyLabel="OurSolutionsPingEnableServices.java" index="9">
+<position info="not_deleted" x="242" y="0"/>
+</item>
+<item historyLabel="OurSolutionsPingFederateExpress.java" index="8">
+<position/>
+</item>
+<item historyLabel="OurSolutionsPingEnableServices.java" index="9">
+<position info="not_deleted" x="242" y="0"/>
+</item>
+<item historyLabel="OurSolutionsPingFederate.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="OurSolutionsPingFederateExpress.java" index="8">
+<position/>
+</item>
+<item historyLabel="OurSolutionsPingEnableServices.java" index="9">
+<position info="not_deleted" x="242" y="0"/>
+</item>
+<item historyLabel="OurSolutionsPingFederateExpress.java" index="8">
+<position/>
+</item>
+<item historyLabel="OurSolutionsPingFederate.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="OurSolutionsPingFederateExpress.java" index="8">
+<position/>
+</item>
+<item historyLabel="OurSolutionsPingConnect.java" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="OurSolutionsSsoCloudIdentity.java" index="10">
+<position info="not_deleted" x="239" y="0"/>
+</item>
+<item historyLabel="OurSolutionsPingFederateExpress.java" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="OurSolutionsSsoCloudIdentity.java" index="10">
+<position info="not_deleted" x="239" y="0"/>
+</item>
+<item historyLabel="GenericPageTest.java" index="1">
+<position info="not_deleted" x="7820" y="22"/>
+</item>
+<item historyLabel="OurSolutionsSsoCloudIdentity.java" index="10">
+<position info="not_deleted" x="239" y="0"/>
+</item>
+<item active="true" historyLabel="GenericPageTest.java" index="1">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -538,50 +518,50 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GenericPageTest.java" tooltip="HttpUnit/src/com/christan/pagetests/GenericPageTest.java">
+<persistable path="/HttpUnit/src/com/christan/pagetests/GenericPageTest.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="OurSolutionsPingFederateExpress.java" tooltip="HttpUnit/src/com/christan/pagetests/OurSolutionsPingFederateExpress.java">
+<persistable path="/HttpUnit/src/com/christan/pagetests/OurSolutionsPingFederateExpress.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="OurSolutionsSsoCloudIdentity.java" tooltip="HttpUnit/src/com/christan/pagetests/OurSolutionsSsoCloudIdentity.java">
+<persistable path="/HttpUnit/src/com/christan/pagetests/OurSolutionsSsoCloudIdentity.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="OurSolutionsPingConnect.java" tooltip="HttpUnit/src/com/christan/pagetests/OurSolutionsPingConnect.java">
+<persistable path="/HttpUnit/src/com/christan/pagetests/OurSolutionsPingConnect.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="OurSolutionsPingFederate.java" tooltip="HttpUnit/src/com/christan/pagetests/OurSolutionsPingFederate.java">
+<persistable path="/HttpUnit/src/com/christan/pagetests/OurSolutionsPingFederate.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="OurSolutionsPingEnableServices.java" tooltip="HttpUnit/src/com/christan/pagetests/OurSolutionsPingEnableServices.java">
+<persistable path="/HttpUnit/src/com/christan/pagetests/OurSolutionsPingEnableServices.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AboutUsTest.java" tooltip="HttpUnit/src/com/christan/pagetests/AboutUsTest.java">
+<persistable path="/HttpUnit/src/com/christan/pagetests/AboutUsTest.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HomepageTest.java" tooltip="HttpUnit/src/com/christan/pagetests/HomepageTest.java">
+<persistable path="/HttpUnit/src/com/christan/pagetests/HomepageTest.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="OurSolutions.java" tooltip="HttpUnit/src/com/christan/pagetests/OurSolutions.java">
+<persistable path="/HttpUnit/src/com/christan/pagetests/OurSolutions.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Parser.java" tooltip="HttpUnit/src/com/christan/parser/Parser.java">
+<persistable path="/HttpUnit/src/com/christan/parser/Parser.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GenericTestHelpers.java" tooltip="HttpUnit/src/com/christan/tests/GenericTestHelpers.java">
+<persistable path="/HttpUnit/src/com/christan/tests/GenericTestHelpers.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HomepageTest.java" tooltip="HttpUnit/src/com/christan/tests/HomepageTest.java">
+<persistable path="/HttpUnit/src/com/christan/tests/HomepageTest.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GenericTestHelpers.java" tooltip="HttpUnit/src/GenericTestHelpers.java">
+<persistable path="/HttpUnit/src/GenericTestHelpers.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NekoHTMLParser.java" tooltip="HttpUnit/src/com/meterware/httpunit/parsing/NekoHTMLParser.java">
 <persistable path="/HttpUnit/src/com/meterware/httpunit/parsing/NekoHTMLParser.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WebWindow.java" tooltip="HttpUnit/src/com/meterware/httpunit/WebWindow.java">
 <persistable path="/HttpUnit/src/com/meterware/httpunit/WebWindow.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PingServlet.java" tooltip="HttpUnit/src/com/christan/webwrapper/PingServlet.java">
-<persistable path="/HttpUnit/src/com/christan/webwrapper/PingServlet.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PoolEditorServlet.java" tooltip="HttpUnit/src/com/tutorial/persistence/PoolEditorServlet.java">
-<persistable path="/HttpUnit/src/com/tutorial/persistence/PoolEditorServlet.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ServletUnitClient.java" tooltip="HttpUnit/src/com/meterware/servletunit/ServletUnitClient.java">
-<persistable path="/HttpUnit/src/com/meterware/servletunit/ServletUnitClient.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ServletRunner.java" tooltip="HttpUnit/src/com/meterware/servletunit/ServletRunner.java">
-<persistable path="/HttpUnit/src/com/meterware/servletunit/ServletRunner.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ServletRunnerWrapper.java" tooltip="HttpUnit/src/com/christan/webwrapper/ServletRunnerWrapper.java">
-<persistable path="/HttpUnit/src/com/christan/webwrapper/ServletRunnerWrapper.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ServletWrapper.java" tooltip="HttpUnit/src/com/christan/webwrapper/ServletWrapper.java">
-<persistable path="/HttpUnit/src/com/christan/webwrapper/ServletWrapper.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BettingPoolGame.java" tooltip="HttpUnit/src/com/tutorial/persistence/BettingPoolGame.java">
-<persistable path="/HttpUnit/src/com/tutorial/persistence/BettingPoolGame.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BettingPool.java" tooltip="HttpUnit/src/com/tutorial/persistence/BettingPool.java">
-<persistable path="/HttpUnit/src/com/tutorial/persistence/BettingPool.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PoolEditorServlet.java" tooltip="HttpUnit/src/com/christan/tests/PoolEditorServlet.java">
-<persistable path="/HttpUnit/src/com/christan/tests/PoolEditorServlet.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PoolEditorTest.java" tooltip="HttpUnit/src/com/christan/tests/PoolEditorTest.java">
-<persistable path="/HttpUnit/src/com/christan/tests/PoolEditorTest.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="JUnitServlet.java" tooltip="HttpUnit/src/com/meterware/servletunit/JUnitServlet.java">
-<persistable path="/HttpUnit/src/com/meterware/servletunit/JUnitServlet.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WebResponse.java" tooltip="HttpUnit/src/com/meterware/httpunit/WebResponse.java">
-<persistable path="/HttpUnit/src/com/meterware/httpunit/WebResponse.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ScriptFilter.java" tooltip="HttpUnit/src/com/meterware/httpunit/parsing/ScriptFilter.java">
-<persistable path="/HttpUnit/src/com/meterware/httpunit/parsing/ScriptFilter.java"/>
 </file>
 </mruList>
 </workbench>

@@ -29,7 +29,7 @@
 /knowledge-center/SSO-and-Federated-Identity.cfm
 /knowledge-center/Single-Sign-On-for-SaaS.cfm
 /knowledge-center/SAML-Tutorials-and-Resources.cfm
-/knowledge-center/CardSpace-OpenID.cfm
+/knowledge-center/OpenID-OAuth-Info-Cards.cfm
 /knowledge-center/Security-Token-Service.cfm
 /customers/
 /customers/index.cfm
@@ -52,9 +52,9 @@ http://documentation.pingidentity.com/
 /about-us/careers.cfm
 /about-us/contact-us.cfm
 /overlay/email-sales.cfm
-/support-and-downloads/download.cfm?item=6600
-/support-and-downloads/download.cfm?item=6607
-/support-and-downloads/download.cfm?item=6818
+/support-and-downloads/download.cfm/TheBusinessValueofInternetIdentitySecurity?item=6600
+/support-and-downloads/download.cfm/SecureInternetSingleSign-On101?item=6607
+/support-and-downloads/download.cfm/BecomeaBusinessHero-TheValueofInternetSingleSign-On?item=6818
 /support-and-downloads/index.cfm
 /overlay/email-page.cfm?pageID=1569&pageName=InternetIdentitySecuritySolutions|EliminatePasswords&pageURL=/our-solutions/index.cfm&
 /our-solutions/
@@ -89,7 +89,7 @@ http://www.addthis.com/bookmark.php?v=250&pub=xa-4ac238b37c16bda0
 /knowledge-center/SSO-and-Federated-Identity.cfm
 /knowledge-center/Single-Sign-On-for-SaaS.cfm
 /knowledge-center/SAML-Tutorials-and-Resources.cfm
-/knowledge-center/CardSpace-OpenID.cfm
+/knowledge-center/OpenID-OAuth-Info-Cards.cfm
 /knowledge-center/Security-Token-Service.cfm
 /customers/
 /customers/index.cfm
